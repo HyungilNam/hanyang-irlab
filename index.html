@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intelligent Reality Lab | 한양대학교 ERICA</title>
+<meta name="description" content="한양대학교 ERICA 디자인컨버전스전공 Intelligent Reality Lab">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root {
+    --paper: #F5F7F9;
+    --ink: #16223A;
+    --muted: #5B6679;
+    --line: #D5DCE4;
+    --blue: #0E4A84;
+    --signal: #2BA6B8;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Pretendard", -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    word-break: keep-all;
+  }
+  a { color: var(--blue); }
+  a:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 28px; }
+
+  header.top {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 22px 0; font-size: 15px;
+  }
+  header.top .mark { font-weight: 700; letter-spacing: -0.01em; }
+  header.top nav a { margin-left: 22px; color: var(--muted); text-decoration: none; }
+  header.top nav a:hover { color: var(--ink); }
+
+  .hero { position: relative; padding: 72px 0 96px; overflow: hidden; }
+  .hero svg.grid {
+    position: absolute; right: -60px; top: 10px; width: 520px; height: 420px;
+    opacity: .9; pointer-events: none;
+  }
+  .hero h1 {
+    position: relative; margin: 0; font-size: clamp(44px, 8vw, 88px);
+    line-height: 1.02; font-weight: 800; letter-spacing: -0.035em; max-width: 9ch;
+  }
+  .hero p.aff { position: relative; margin: 28px 0 0; color: var(--muted); font-size: 18px; }
+
+  section { padding: 56px 0; border-top: 1px solid var(--line); }
+  section h2 { margin: 0 0 20px; font-size: 24px; font-weight: 700; letter-spacing: -0.01em; }
+  section p { margin: 0 0 14px; max-width: 64ch; }
+
+  .person { display: grid; grid-template-columns: 1fr 2fr; gap: 24px; }
+  .person .name { font-size: 22px; font-weight: 700; }
+  .person .role { color: var(--muted); }
+  dl.contact { display: grid; grid-template-columns: 90px 1fr; gap: 6px 16px; margin: 0; }
+  dl.contact dt { color: var(--muted); }
+  dl.contact dd { margin: 0; }
+
+  footer { padding: 40px 0 56px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); }
+
+  @media (max-width: 640px) {
+    .hero svg.grid { width: 340px; right: -120px; opacity: .5; }
+    .person { grid-template-columns: 1fr; gap: 8px; }
+    header.top nav a { margin-left: 14px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <span class="mark">IR Lab</span>
+    <nav aria-label="주요 메뉴">
+      <a href="#about">소개</a>
+      <a href="#people">구성원</a>
+      <a href="#contact">연락처</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <!-- 현실 위에 겹쳐지는 디지털 레이어를 표현한 원근 격자 -->
+    <svg class="grid" viewBox="0 0 520 420" aria-hidden="true">
+      <g stroke="#0E4A84" stroke-width="1" fill="none" opacity=".25">
+        <path d="M40 380 L480 380 M80 330 L440 330 M112 290 L408 290 M138 258 L382 258 M158 232 L362 232 M174 212 L346 212"/>
+        <path d="M40 380 L174 212 M128 380 L208 212 M216 380 L243 212 M304 380 L277 212 M392 380 L312 212 M480 380 L346 212"/>
+      </g>
+      <g fill="none" stroke="#2BA6B8" stroke-width="1.5">
+        <rect x="190" y="70" width="170" height="120" rx="3"/>
+        <path d="M190 190 L216 290 M360 190 L322 290" stroke-dasharray="4 5"/>
+      </g>
+      <circle cx="275" cy="130" r="5" fill="#2BA6B8"/>
+    </svg>
+    <h1>Intelligent Reality Lab</h1>
+    <p class="aff">한양대학교 ERICA 소프트웨어융합대학 ICT융합학부 디자인컨버전스전공</p>
+  </div>
+
+  <section id="about">
+    <h2>연구실 소개</h2>
+    <!-- 아래 문단을 연구실 소개 문구로 교체하세요 -->
+    <p>Intelligent Reality Lab은 한양대학교 ERICA 디자인컨버전스전공 소속 연구실입니다.</p>
+    <p>연구 분야와 프로젝트 소개는 곧 업데이트됩니다.</p>
+  </section>
+
+  <section id="people">
+    <h2>구성원</h2>
+    <div class="person">
+      <div>
+        <div class="name">남현길</div>
+        <div class="role">지도교수</div>
+      </div>
+      <div>
+        <!-- 약력·학생 목록을 여기에 추가하세요 -->
+        <p>ICT융합학부 디자인컨버전스전공</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>연락처</h2>
+    <dl class="contact">
+      <dt>이메일</dt><dd><a href="mailto:skagusrlf@hanyang.ac.kr">skagusrlf@hanyang.ac.kr</a></dd>
+      <dt>전화</dt><dd>031-400-1056</dd>
+      <dt>주소</dt><dd>경기도 안산시 상록구 한양대학로 55, 한양대학교 ERICA</dd>
+    </dl>
+  </section>
+
+  <footer>© 2026 Intelligent Reality Lab, Hanyang University ERICA</footer>
+</div>
+</body>
+</html>
