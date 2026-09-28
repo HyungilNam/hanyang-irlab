@@ -1,0 +1,42 @@
+# 연구 분야 / Research areas
+#
+# publications.txt 와 같은 방식입니다: 한 분야가 한 칸, 칸 사이는 --- 줄.
+# 위에 적은 순서대로 페이지에 나옵니다. 칸을 지우면 사라지고, hide: yes 로도 숨길 수 있습니다.
+# 이 네 칸은 연구 페이지와 대문 오른쪽 목록에 동시에 쓰입니다.
+#
+#   badge   : 카드 위의 작은 라벨 (예: 01 — Understand & Represent)
+#   title   : 제목. / 를 넣으면 그 자리에서 줄바꿈됩니다 (윗줄 = 분야, 아랫줄 = 세부).
+#   ko      : 한국어 한두 문장
+#   body    : 영어 설명
+#   icon    : represent | interact | adapt | connect  ← 카드에 그려지는 상징 아이콘
+#   hide    : yes 면 페이지에 나오지 않습니다
+
+badge: 01 — Understand & Represent
+icon: represent
+title: Spatial Computing / Vision, Graphics & 3D Representation
+ko: 사람과 공간을 기계가 이해할 수 있는 형태로 복원하고, 다시 사실적으로 그려냅니다.
+body: Reconstructing the geometry, material and layout of real objects and spaces, and rendering them convincingly — the representation layer everything else stands on. REPAINT, real-object XR creation, grip-lift interaction.
+
+---
+
+badge: 02 — Interact
+icon: interact
+title: Embodied & Spatial Interaction / XR, Multimodal & Body-Based Interaction
+ko: 화면과 마우스가 아니라 몸과 공간을 입력으로 삼는 상호작용을 설계합니다.
+body: Interaction that takes the body and the space around it as its input rather than a screen and a mouse: avatar locomotion, haptic feedback and multi-user scenarios — AR Fitness Dog, avatar–locomotion congruence, asynchronous avatars, Watch Buddy.
+
+---
+
+badge: 03 — Understand & Adapt
+icon: adapt
+title: Human Understanding & Embodied Agents / Human Behavior, Social & Adaptive Interaction
+ko: 음성·제스처·시선에서 사람의 상태를 읽어 내고, 그에 맞춰 반응하는 에이전트를 만듭니다.
+body: Reading a person's cognitive, emotional and social state from voice, gesture and gaze — and writing it as behavior an embodied agent can actually run, as in the emotionally responsive virtual parent.
+
+---
+
+badge: 04 — Connect to Reality
+icon: connect
+title: Physical AI & Digital Twins / Real-World Intelligent Systems
+ko: 물리 세계에서 실제로 작동하는 AI와, 현장에 적용되는 디지털 트윈을 만듭니다.
+body: Intelligence that acts in the physical world, and twins deployed where the stakes are real: hydrogen and pipeline safety (SHAPE), nursing simulation, manufacturing.

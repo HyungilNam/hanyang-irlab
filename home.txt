@@ -1,0 +1,40 @@
+# 대문 문구 / Front page text
+#
+# 다른 파일(research.txt, news.txt, publications.txt)과 같은 방식입니다:
+# 한 덩어리가 하나, 덩어리 사이는 --- 줄, 각 줄은 `키: 값`.
+# 저장하고 브라우저를 새로고침하면 바로 바뀝니다. HTML은 건드리지 않아도 됩니다.
+#
+# 덩어리는 둘입니다.
+#   첫 번째 (block: hero) — 대문 맨 위, 연구실 소개
+#   두 번째 (block: step) — 그 아래, 가상 연구실로 이어지는 부분
+#
+# lede 와 lede2 가 영어 두 문단, ledeko 와 lede2ko 가 그에 대응하는 한국어 두 문단입니다.
+# *별표* 로 감싼 부분은 파란색으로 강조됩니다.  /  는 그 자리에서 줄바꿈입니다.
+# 대문 오른쪽의 연구 분야 네 가지는 research.txt 에서 그대로 가져옵니다.
+
+block: hero
+eyebrow: Hanyang University ERICA · ICT Convergence
+title: We build interactions that bridge / *people, digital worlds, and physical reality.*
+titleko: 사람과 디지털 세계, 물리적 현실을 연결하는 상호작용을 만듭니다.
+lede: The Intelligent Reality Lab (IRL) explores how people interact with technology across physical and virtual worlds. We study how computing systems can understand people and space, respond through embodied and multimodal interaction, and connect digital experiences with the physical world.
+lede2: Our research brings together XR, Human–Computer Interaction, computer vision and graphics, and intelligent systems to create new forms of interaction that move beyond conventional screens and interfaces.
+ledeko: *지능형 현실 연구실(Intelligent Reality Lab, IRL)*은 물리적 현실과 가상 세계를 넘나들며 사람과 기술이 어떻게 상호작용할 수 있는지를 연구합니다. 컴퓨팅 시스템이 사람과 공간을 이해하고, 체화된·멀티모달 상호작용을 통해 반응하며, 디지털 경험을 물리적 세계와 연결하는 방법을 탐구합니다.
+lede2ko: 이를 위해 XR, Human–Computer Interaction, 컴퓨터 비전·그래픽스, 지능형 시스템을 연결하여 기존의 화면과 인터페이스를 넘어서는 새로운 상호작용을 설계하고 구현합니다.
+cta: See the research
+ctako: 연구 보기
+areashead: What we work on
+areasheadko: 연구 분야
+areasmore: All four areas in detail
+
+---
+
+block: step
+eyebrow: Virtual Lab · 가상 연구실
+title: And you can / *walk into it.*
+titleko: 그리고 그 연구실에, 지금 걸어 들어올 수 있습니다.
+lede: Each of those areas has a room. The lab is also a WebXR space that opens from this browser — or from an XR headset. Choose English or Korean at the door and every sign and every reply follows. An embodied guide walks you to the exhibit you asked about, points at it, and carries a message back to us.
+ledeko: 위의 연구 분야는 각각 하나의 방으로 만들어져 있습니다. 이 브라우저에서, 혹은 XR 헤드셋에서 바로 열리는 WebXR 공간입니다. 입구에서 언어를 고르면 모든 안내판과 대화가 그 언어로 바뀝니다. 체화된 에이전트가 질문한 전시 앞까지 함께 걸어가 설명하고, 남긴 메시지를 연구실로 전달합니다.
+cta: Enter the virtual lab
+ctako: 가상 연구실 들어가기
+greeter: *Hyeongil* is at the door. Ask him about a paper, about joining, about a collaboration - he walks you there and takes a message.
+greeterko: 안내 에이전트가 입구에서 기다립니다.

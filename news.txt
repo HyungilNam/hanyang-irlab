@@ -1,0 +1,76 @@
+# 소식 · 발표 · 수상 / News, talks and awards
+#
+# publications.txt, research.txt 와 같은 방식입니다: 한 항목이 한 칸, 칸 사이는 --- 줄.
+# 위에 적은 것이 페이지 맨 위에 나옵니다(최신순으로 직접 정렬해 주세요).
+#
+#   type  : news | talk | award | visit    ← 페이지의 필터 버튼과 연결됩니다
+#             news  소식 · 새 소식
+#             talk  초청 강연 · 발표
+#             award 수상 · 선정
+#             visit 방문 · 교류 · 경력
+#   date  : 2026.09  처럼 자유롭게. 그대로 표시됩니다
+#   title : 한 줄 제목 (영어)
+#   ko    : 같은 내용의 한국어 한 줄
+#   body  : 필요하면 두세 문장 더 (없으면 줄을 지우세요)
+#   link  : 관련 주소 (넣으면 제목이 링크가 됩니다)
+#   hide  : yes 면 페이지에 나오지 않습니다
+#
+# 초청 강연을 추가하실 때는 아래 형식을 복사해서 쓰시면 됩니다:
+#
+#   type: talk
+#   date: 2026.11
+#   title: Invited talk: "제목" at 기관 / 학회
+#   ko: 기관명 초청 강연 — 제목
+#
+# ------------------------------------------------------------------------------
+
+type: news
+date: 2026.09
+title: The lab's virtual space is open — walk in from the browser
+ko: 가상 연구실을 공개했습니다. 브라우저에서 바로 들어와 둘러볼 수 있습니다.
+body: A WebXR space that runs on a laptop and in a headset, with an embodied guide that answers questions in English or Korean and can take a message for the lab.
+link: xr/
+
+---
+
+type: visit
+date: 2026.08
+title: Hyeongil Nam joined Hanyang University ERICA as faculty, and the Intelligent Reality Lab opened
+ko: 남현길 교수가 한양대학교 ERICA에 부임하며 지능형 현실 연구실을 시작했습니다.
+
+---
+
+type: news
+date: 2026.09
+title: 3D User Interfaces (Fall 2026) is running — teams of two build a space that works on the web and in XR
+ko: 3D 사용자 인터페이스 수업을 시작했습니다. 두 명이 한 팀이 되어 웹과 XR에서 모두 동작하는 공간을 만듭니다.
+
+---
+
+type: award
+date: 2025.10
+title: IEEE ISMAR 2025 Best Paper Honorable Mention
+ko: IEEE ISMAR 2025 우수논문 후보 선정
+body: For the study of avatar–locomotion congruence and its effect on user experience and identification in VR.
+
+---
+
+type: award
+date: 2025.06
+title: Alberta Innovates Postdoctoral Fellowship in Health Innovation (2025.06 – 2027.05)
+ko: Alberta Innovates 보건혁신 박사후연구원 펠로십 선정 (2025.06 – 2027.05)
+
+---
+
+type: award
+date: 2025.03
+title: IEEE VR 2025 Best Paper Honorable Mention, and Best Presentation at the XRIOS Workshop
+ko: IEEE VR 2025 우수논문 후보 및 XRIOS 워크숍 최우수 발표 선정
+body: For AR Fitness Dog — a user-mimicking virtual pet that supports physical exercise.
+
+---
+
+type: talk
+date: 2025
+title: 2025 Postdoc Research Slam, University of Calgary
+ko: 2025 Postdoc Research Slam 발표 (University of Calgary)

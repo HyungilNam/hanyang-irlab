@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Virtual Lab | Intelligent Reality Lab</title>
+<meta name="description" content="The Intelligent Reality Lab virtual space, entered straight from the browser. Runs on desktop and on XR headsets. 브라우저에서 접속하는 가상 연구실.">
+<meta property="og:title" content="Virtual Lab · 가상 연구실 | Intelligent Reality Lab">
+<meta property="og:description" content="Walk into the lab from a browser or an XR headset. 브라우저와 XR 헤드셋에서 들어오는 가상 연구실.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://irlab.hanyang.ac.kr/xr/">
+<meta property="og:image" content="https://irlab.hanyang.ac.kr/assets/space-office.png">
+<link rel="canonical" href="https://irlab.hanyang.ac.kr/xr/">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap topbar">
+    
+    <a class="brand first" href="../index.html" aria-label="Intelligent Reality Lab, home">
+      <svg class="irl-mark" viewBox="0 0 64 64" role="img" aria-label="Intelligent Reality Lab">
+        <rect class="tile" x="2" y="2" width="60" height="60" rx="8"/>
+        <text class="letters" x="32" y="41" text-anchor="middle">IRL</text>
+        <circle class="mind" cx="50" cy="15" r="4.5"/>
+      </svg>
+      <span class="brand-names">
+        <span class="ko-name">지능형 현실 연구실</span>
+        <span class="en-name">Intelligent Reality Lab</span>
+      </span>
+    </a>
+    <a class="univ-link" href="https://www.hanyang.ac.kr/" rel="noopener" aria-label="Hanyang University ERICA">
+      <img class="univ" src="../assets/brand/hanyang-erica.png" alt="Hanyang University ERICA" onerror="this.remove()">
+    </a>
+  </div>
+  <nav class="wrap mainnav" aria-label="Main menu">
+    <a href="../index.html">Home <span class="ko-inline">홈</span></a>
+    <a href="../research.html">Research <span class="ko-inline">연구</span></a>
+    <a href="../publications.html">Publications <span class="ko-inline">논문</span></a>
+    <a href="../news.html">News <span class="ko-inline">소식</span></a>
+    <a href="../teaching.html">Teaching <span class="ko-inline">수업</span></a>
+    <a href="../people.html">People <span class="ko-inline">구성원</span></a>
+    <a href="../collaboration.html">Collaboration <span class="ko-inline">협력</span></a>
+    <a href="../join.html">Join <span class="ko-inline">합류</span></a>
+    <a class="enter active" href="./">Virtual Lab <span class="ko-inline">가상 연구실</span></a>
+  </nav>
+</header>
+
+<div class="wrap">
+
+  <div class="hero compact">
+    <h1 id="headline">The virtual lab <em>is open</em>.</h1>
+    <p class="h1-ko">가상 연구실이 열려 있습니다.</p>
+    
+    <p class="lede">No installation. Use mouse and keyboard on a desktop, or controllers in an XR headset browser —
+      it is the same space either way. A guide agent inside will talk with you.</p>
+    <p class="ko">설치가 필요 없습니다. 데스크톱에서는 마우스와 키보드로, XR 헤드셋 브라우저에서는 컨트롤러로
+      같은 공간을 체험합니다. 공간 안의 안내 에이전트에게 말을 걸 수 있습니다.</p>
+    <p class="cta-row">
+      <a class="btn primary" id="enter" href="#" aria-disabled="true">Enter <span class="ko-inline">입장하기</span></a>
+      <a class="btn" href="#howto">How to move <span class="ko-inline">조작 방법</span></a>
+    </p>
+    <p class="muted" id="status">Checking the space address… <span class="ko-inline">공간 주소를 확인하는 중입니다…</span></p>
+  </div>
+
+  <section id="howto">
+    <h2>Controls <span class="ko-head">조작 방법</span></h2>
+    <table class="specs">
+      <tr><th></th><th>Desktop <span class="ko-inline">데스크톱</span></th><th>XR headset <span class="ko-inline">XR 헤드셋</span></th></tr>
+      <tr><th>Move<span class="ko-inline">이동</span></th>
+        <td><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> or arrow keys, <kbd>Shift</kbd> to run
+          <span class="ko-inline">방향키, Shift 달리기</span></td>
+        <td>Push the right stick forward, aim, release to teleport
+          <span class="ko-inline">오른쪽 스틱으로 순간이동 지점 선택 후 놓기</span></td></tr>
+      <tr><th>Look<span class="ko-inline">시점</span></th>
+        <td>Drag empty space, or drag with the right mouse button
+          <span class="ko-inline">빈 곳 드래그 또는 오른쪽 버튼 드래그</span></td>
+        <td>Turn your head; flick the stick left/right to snap-turn 45°
+          <span class="ko-inline">고개 돌리기, 스틱 좌우로 45° 회전</span></td></tr>
+      <tr><th>Select · manipulate<span class="ko-inline">선택 · 조작</span></th>
+        <td>Click to select, hold and move to grab, wheel to push and pull
+          <span class="ko-inline">클릭 선택, 누른 채 이동해 잡기, 휠로 밀고 당기기</span></td>
+        <td>Trigger to select, trigger or grip to grab, or grab directly up close
+          <span class="ko-inline">트리거 선택, 트리거·그립으로 잡기, 가까이서 직접 잡기</span></td></tr>
+      <tr><th>Talk<span class="ko-inline">대화</span></th>
+        <td>Click the agent or step closer, type and press <kbd>Enter</kbd>; hold <kbd>V</kbd> to speak
+          <span class="ko-inline">에이전트 클릭 후 입력, V를 누르고 말하기</span></td>
+        <td>Press a suggested question under the speech bubble, or hold <kbd>B</kbd>/<kbd>Y</kbd> to speak
+          <span class="ko-inline">추천 질문 버튼, 또는 B/Y를 누르고 말하기</span></td></tr>
+    </table>
+    <div class="notice">
+      <strong>To enter with a headset</strong>, open this address in the headset's own browser
+      (VIVE Browser, Meta Quest Browser, …) and press the <em>VR</em> button at the bottom of the screen.
+      On a laptop or desktop, just enter.
+      <span class="ko-inline">헤드셋 안의 브라우저로 이 주소를 열고 화면 아래 VR 버튼을 누르세요.
+        노트북이나 데스크톱에서는 그냥 입장하면 됩니다.</span>
+    </div>
+  </section>
+
+  <section id="inside">
+    <h2>Inside the space <span class="ko-head">공간 안에는</span></h2>
+    <p class="section-lede">The space is laid out as a tour of the lab: you enter at the lobby, walk the research
+      wing, read where the lab is headed, and end at the admissions and collaboration corners.</p>
+    <p class="ko">로비에서 시작해 연구 전시 구역, 앞으로의 방향, 입학 상담과 협력 코너로 이어지는 하나의 동선으로 구성했습니다.</p>
+    <div class="cards three">
+      <article class="card">
+        <h3>Lobby <span class="ko-inline">로비</span></h3>
+        <p class="ko">연구실 소개와 조작 방법, 그리고 대화 저장에 대한 안내가 있습니다. 에이전트가 맞이합니다.</p>
+        <p>What the lab is, how to move, and a notice about what happens to your conversation. The hosts wait here.</p>
+      </article>
+      <article class="card">
+        <h3>Research wing <span class="ko-inline">연구 전시</span></h3>
+        <p class="ko">01 Foundation · 02 Interact · 03 Understand · 04 Deploy 네 개의 전시대.
+          기둥의 점을 누르면 대표 연구와 논문이 펼쳐집니다.</p>
+        <p>Four exhibits along the wall. Click the point on each plinth for the projects and papers behind it.</p>
+      </article>
+      <article class="card">
+        <h3>Vision wall <span class="ko-inline">앞으로의 방향</span></h3>
+        <p class="ko">행동 모델 · 상호작용 엔진 · XR-AI 인프라, 세 층위를 잇는 다음 단계를 보여 줍니다.</p>
+        <p>The three layers the lab is joining into one system that thinks, adapts and acts.</p>
+      </article>
+      <article class="card">
+        <h3>Admissions corner <span class="ko-inline">입학 · 진학 상담</span></h3>
+        <p class="ko">연구실에 합류하고 싶은 분을 위한 코너입니다. 누가 지원할 수 있는지, 무엇을 준비하면 되는지,
+          일정은 어떻게 되는지 세 가지 안내판이 있고, <strong>상담 데스크</strong>에서 바로 질문을 남길 수 있습니다.</p>
+        <p>For people who want to join: who can apply, what to prepare, and how the timeline works — plus an
+          advising desk where your question reaches the lab directly.</p>
+      </article>
+      <article class="card">
+        <h3>Collaboration corner <span class="ko-inline">협력 코너</span></h3>
+        <p class="ko">협력 기관과 합류 안내, 그리고 <strong>메시지 데스크</strong>가 있습니다.
+          버튼을 누르고 말을 남기면 대화와 함께 연구실에 전달됩니다.</p>
+        <p>Who the lab works with, who it is looking for, and a message desk: press the button, say your piece,
+          and it reaches the lab with the conversation.</p>
+      </article>
+      <article class="card">
+        <h3>Hosts <span class="ko-inline">에이전트</span></h3>
+        <p class="ko">Hyeongil은 질문에 답하고 해당 구역까지 함께 걸어가 가리키며 설명합니다.
+          Jake는 따라다니고, 앉고, 공을 물어옵니다.</p>
+        <p>Hyeongil answers questions and walks you to the matching zone, pointing as he explains — with voice,
+          lip sync and gaze. Jake follows, sits, and fetches.</p>
+      </article>
+      <article class="card">
+        <h3>Interaction bench <span class="ko-inline">인터랙션 체험</span></h3>
+        <p class="ko">잡아 옮기기, 물리 버튼, 색을 맞춰 전시를 복원하기 — 3DUI 수업에서 다루는 상호작용입니다.</p>
+        <p>Grab and carry, press a physical button, and restore the exhibit by colour — the vocabulary taught in
+          the lab's 3D User Interfaces course.</p>
+      </article>
+    </div>
+    <figure class="shot">
+      <img src="../assets/space-office.png" alt="Inside the virtual lab" loading="lazy">
+      <figcaption>Inside the virtual lab <span class="ko-inline">가상 연구실 내부 전경</span></figcaption>
+    </figure>
+  </section>
+
+  <section id="notes">
+    <h2>Before you enter <span class="ko-head">접속 전 알아두실 점</span></h2>
+    <ul class="steps">
+      <li><span>Network</span> The space data downloads on first visit — a wired or Wi‑Fi connection is recommended.
+        <i>처음 접속할 때 공간 데이터를 내려받습니다.</i></li>
+      <li><span>Audio</span> The space plays sound; the agent's voice is AI-synthesised.
+        <i>소리가 나오므로 볼륨을 조절해 주세요. 에이전트 음성은 AI 합성 음성입니다.</i></li>
+      <li><span>Comfort</span> If you feel motion sickness, use teleport locomotion only and take a break.
+        <i>멀미가 느껴지면 순간이동만 사용하고 잠시 쉬었다가 들어오세요.</i></li>
+      <li><span>Privacy</span> What you say is sent to an external AI service to generate replies, and the
+        conversation is <strong>saved and passed to the lab</strong> so we can answer you. Only an anonymous
+        session id is stored — no IP address, no account. Please do not type personal information.
+        <i>대화 내용은 답변 생성을 위해 외부 AI 서비스로 전송되며, 연구실에 전달·보관됩니다.
+          익명 세션 id 외에는 저장하지 않습니다. 개인정보는 입력하지 마세요.</i></li>
+    </ul>
+  </section>
+
+  <section id="credits">
+    <h2>Credits <span class="ko-head">제작 정보</span></h2>
+    <table class="specs">
+      <tr><th>Engine · platform</th><td>Unity 6 (URP) + WebXR Export, WebGL build</td></tr>
+      <tr><th>Agent</th><td>Dialogue by OpenAI GPT, speech by ElevenLabs. API keys are kept on the lab server only.
+        <span class="ko-inline">API 키는 연구실 서버에만 보관합니다.</span></td></tr>
+      <tr><th>Conversations</th><td>Kept on the lab's own server with an anonymous session id, so the lab can
+        read questions and messages left for it.
+        <span class="ko-inline">대화는 익명 세션 id와 함께 연구실 서버에 보관됩니다.</span></td></tr>
+      <tr><th>Avatar</th><td>3D avatar created with <a href="https://avaturn.me" rel="noopener">Avaturn</a>, modified
+        (re-rigged and animated for Unity WebXR)</td></tr>
+      <tr><th>Animation</th><td><a href="https://www.mixamo.com" rel="noopener">Mixamo</a> (Adobe)</td></tr>
+      <tr><th>3D assets</th><td>Sci-Fi Office (Unity Asset Store), RSG Dogs Pack (Unity Asset Store)</td></tr>
+      <tr><th>Fonts</th><td>Noto Sans KR (SIL Open Font License 1.1), Pretendard</td></tr>
+    </table>
+  </section>
+
+  <footer class="site-foot">
+    <div class="wrap foot-grid">
+      <div>
+        <img class="univ-footer" src="../assets/brand/hanyang-erica.png" alt="Hanyang University ERICA" onerror="this.remove()">
+        <p class="foot-addr">Intelligent Reality Lab · 지능형 현실 연구실<br>
+          Hanyang University ERICA, 55 Hanyangdaehak-ro, Sangnok-gu, Ansan, Gyeonggi-do, Korea<br>
+          <a href="mailto:skagusrlf@hanyang.ac.kr">skagusrlf@hanyang.ac.kr</a> · 031-400-1056</p>
+      </div>
+      <div>
+        <p class="credits">© 2026 Intelligent Reality Lab, Hanyang University ERICA</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+  // Address of the virtual space (WebGL build). The space is NOT in this repository - it lives
+  // on the lab server, so that rebuilding it does not add 50 MB to the git history every time.
+  //
+  // Leave this empty while the server is not serving it yet: the page then says "opens soon"
+  // instead of offering a door that leads nowhere. The moment deploy_space.sh has run, set it to
+  //
+  //     const BUILD_URL = "https://api.irlab.hanyang.ac.kr/space/";
+  //
+  // and publish the site once more. Nothing else has to change - the build and the agent API
+  // share that origin, so there is no CORS and no api-config.json.
+  const BUILD_URL = "";
+
+  const enter = document.getElementById('enter');
+  const status = document.getElementById('status');
+
+  if (BUILD_URL) {
+    enter.href = BUILD_URL;
+    enter.removeAttribute('aria-disabled');
+    status.innerHTML = navigator.xr
+      ? "This browser supports XR. If you are wearing a headset, press the VR button after entering. <span class=\"ko-inline\">헤드셋을 쓰고 계시면 입장 후 VR 버튼을 누르세요.</span>"
+      : "You will enter in desktop mode. Open this page in a headset browser to switch to VR. <span class=\"ko-inline\">헤드셋 브라우저로 열면 VR로 전환할 수 있습니다.</span>";
+  } else {
+    // Don't promise a door that is not there yet.
+    document.getElementById('headline').innerHTML = 'The virtual lab <em>opens soon</em>.';
+    document.querySelector('.h1-ko').textContent = '가상 연구실을 곧 엽니다.';
+    status.innerHTML = "The build is being put on the lab server. You will be able to enter from this page. <span class=\"ko-inline\">빌드를 서버에 올리는 중입니다. 준비되면 이 페이지에서 바로 입장할 수 있습니다.</span>";
+  }
+
+  const header = document.querySelector('header.top');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
+</body>
+</html>

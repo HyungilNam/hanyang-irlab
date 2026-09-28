@@ -1,132 +1,252 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Intelligent Reality Lab | 한양대학교 ERICA</title>
-<meta name="description" content="한양대학교 ERICA 디자인컨버전스전공 Intelligent Reality Lab">
+<title>Intelligent Reality Lab · 지능형 현실 연구실 | Hanyang University ERICA</title>
+<meta name="description" content="A lab you can walk into. XR and AI systems that understand people, at Hanyang University ERICA. 한양대학교 ERICA 지능형 현실 연구실.">
+<meta property="og:title" content="Intelligent Reality Lab · 지능형 현실 연구실">
+<meta property="og:description" content="A lab you can walk into. XR and AI systems that understand people, at Hanyang University ERICA. 한양대학교 ERICA 지능형 현실 연구실.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://irlab.hanyang.ac.kr/index.html">
+<meta property="og:image" content="https://irlab.hanyang.ac.kr/assets/agents/hyeongil-agent-full.png">
+<link rel="canonical" href="https://irlab.hanyang.ac.kr/index.html">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
-<style>
-  :root {
-    --paper: #F5F7F9;
-    --ink: #16223A;
-    --muted: #5B6679;
-    --line: #D5DCE4;
-    --blue: #0E4A84;
-    --signal: #2BA6B8;
-  }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; }
-  body {
-    background: var(--paper);
-    color: var(--ink);
-    font-family: "Pretendard", -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-    font-size: 17px;
-    line-height: 1.7;
-    word-break: keep-all;
-  }
-  a { color: var(--blue); }
-  a:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
-  .wrap { max-width: 960px; margin: 0 auto; padding: 0 28px; }
-
-  header.top {
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 22px 0; font-size: 15px;
-  }
-  header.top .mark { font-weight: 700; letter-spacing: -0.01em; }
-  header.top nav a { margin-left: 22px; color: var(--muted); text-decoration: none; }
-  header.top nav a:hover { color: var(--ink); }
-
-  .hero { position: relative; padding: 72px 0 96px; overflow: hidden; }
-  .hero svg.grid {
-    position: absolute; right: -60px; top: 10px; width: 520px; height: 420px;
-    opacity: .9; pointer-events: none;
-  }
-  .hero h1 {
-    position: relative; margin: 0; font-size: clamp(44px, 8vw, 88px);
-    line-height: 1.02; font-weight: 800; letter-spacing: -0.035em; max-width: 9ch;
-  }
-  .hero p.aff { position: relative; margin: 28px 0 0; color: var(--muted); font-size: 18px; }
-
-  section { padding: 56px 0; border-top: 1px solid var(--line); }
-  section h2 { margin: 0 0 20px; font-size: 24px; font-weight: 700; letter-spacing: -0.01em; }
-  section p { margin: 0 0 14px; max-width: 64ch; }
-
-  .person { display: grid; grid-template-columns: 1fr 2fr; gap: 24px; }
-  .person .name { font-size: 22px; font-weight: 700; }
-  .person .role { color: var(--muted); }
-  dl.contact { display: grid; grid-template-columns: 90px 1fr; gap: 6px 16px; margin: 0; }
-  dl.contact dt { color: var(--muted); }
-  dl.contact dd { margin: 0; }
-
-  footer { padding: 40px 0 56px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); }
-
-  @media (max-width: 640px) {
-    .hero svg.grid { width: 340px; right: -120px; opacity: .5; }
-    .person { grid-template-columns: 1fr; gap: 8px; }
-    header.top nav a { margin-left: 14px; }
-  }
-</style>
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<div class="wrap">
-  <header class="top">
-    <span class="mark">IR Lab</span>
-    <nav aria-label="주요 메뉴">
-      <a href="#about">소개</a>
-      <a href="#people">구성원</a>
-      <a href="#contact">연락처</a>
-    </nav>
-  </header>
 
-  <div class="hero">
-    <!-- 현실 위에 겹쳐지는 디지털 레이어를 표현한 원근 격자 -->
-    <svg class="grid" viewBox="0 0 520 420" aria-hidden="true">
-      <g stroke="#0E4A84" stroke-width="1" fill="none" opacity=".25">
-        <path d="M40 380 L480 380 M80 330 L440 330 M112 290 L408 290 M138 258 L382 258 M158 232 L362 232 M174 212 L346 212"/>
-        <path d="M40 380 L174 212 M128 380 L208 212 M216 380 L243 212 M304 380 L277 212 M392 380 L312 212 M480 380 L346 212"/>
-      </g>
-      <g fill="none" stroke="#2BA6B8" stroke-width="1.5">
-        <rect x="190" y="70" width="170" height="120" rx="3"/>
-        <path d="M190 190 L216 290 M360 190 L322 290" stroke-dasharray="4 5"/>
-      </g>
-      <circle cx="275" cy="130" r="5" fill="#2BA6B8"/>
-    </svg>
-    <h1>Intelligent Reality Lab</h1>
-    <p class="aff">한양대학교 ERICA 소프트웨어융합대학 ICT융합학부 디자인컨버전스전공</p>
+<header class="top">
+  <div class="wrap topbar">
+    
+    <a class="brand first" href="index.html" aria-label="Intelligent Reality Lab, home">
+      <svg class="irl-mark" viewBox="0 0 64 64" role="img" aria-label="Intelligent Reality Lab">
+        <rect class="tile" x="2" y="2" width="60" height="60" rx="8"/>
+        <text class="letters" x="32" y="41" text-anchor="middle">IRL</text>
+        <circle class="mind" cx="50" cy="15" r="4.5"/>
+      </svg>
+      <span class="brand-names">
+        <span class="ko-name">지능형 현실 연구실</span>
+        <span class="en-name">Intelligent Reality Lab</span>
+      </span>
+    </a>
+    <a class="univ-link" href="https://www.hanyang.ac.kr/" rel="noopener"
+       aria-label="Hanyang University ERICA">
+      <img class="univ" src="assets/brand/hanyang-erica.png" alt="Hanyang University ERICA"
+           onerror="this.remove()">
+    </a>
   </div>
+  <nav class="wrap mainnav" aria-label="Main menu">
+    <a class="active" href="index.html">Home <span class="ko-inline">홈</span></a>
+    <a href="research.html">Research <span class="ko-inline">연구</span></a>
+    <a href="publications.html">Publications <span class="ko-inline">논문</span></a>
+    <a href="news.html">News <span class="ko-inline">소식</span></a>
+    <a href="teaching.html">Teaching <span class="ko-inline">수업</span></a>
+    <a href="people.html">People <span class="ko-inline">구성원</span></a>
+    <a href="collaboration.html">Collaboration <span class="ko-inline">협력</span></a>
+    <a href="join.html">Join <span class="ko-inline">합류</span></a>
+    <a class="enter" href="xr/">Virtual Lab <span class="ko-inline">가상 연구실</span></a>
+  </nav>
+</header>
 
-  <section id="about">
-    <h2>연구실 소개</h2>
-    <!-- 아래 문단을 연구실 소개 문구로 교체하세요 -->
-    <p>Intelligent Reality Lab은 한양대학교 ERICA 디자인컨버전스전공 소속 연구실입니다.</p>
-    <p>연구 분야와 프로젝트 소개는 곧 업데이트됩니다.</p>
-  </section>
 
-  <section id="people">
-    <h2>구성원</h2>
-    <div class="person">
-      <div>
-        <div class="name">남현길</div>
-        <div class="role">지도교수</div>
-      </div>
-      <div>
-        <!-- 약력·학생 목록을 여기에 추가하세요 -->
-        <p>ICT융합학부 디자인컨버전스전공</p>
-      </div>
+<!-- The front page opens with the lab, not with the virtual space: who we are and what the
+     work has done. The virtual lab follows from it, in the section below. -->
+<div class="hero-lab">
+  <div class="wrap hero-lab-grid" id="homeHero">
+    <div class="hero-copy">
+      <p class="eyebrow">Hanyang University ERICA · ICT Convergence</p>
+      <!-- These words come from home.txt; what is written here shows if that file is missing. -->
+      <h1>We build interactions that bridge<br><em>people, digital worlds, and physical reality.</em></h1>
+      <p class="h1-ko">사람과 디지털 세계, 물리적 현실을 연결하는 상호작용을 만듭니다.</p>
+      <p class="lede">The Intelligent Reality Lab (IRL) explores how people interact with technology
+        across physical and virtual worlds.</p>
+      <p class="lede2">Our research brings together XR, Human–Computer Interaction, computer vision and
+        graphics, and intelligent systems.</p>
+      <p class="lede-ko">지능형 현실 연구실(IRL)은 물리적 현실과 가상 세계를 넘나들며 사람과 기술이 어떻게 상호작용할 수 있는지를 연구합니다.</p>
+      <p class="lede2-ko">XR, Human–Computer Interaction, 컴퓨터 비전·그래픽스, 지능형 시스템을 연결합니다.</p>
+      <p class="cta-row">
+        <a class="btn primary big" href="research.html">See the research <span class="ko-inline" style="color:rgba(255,255,255,.8)">연구 보기</span></a>
+        <a class="btn big" href="#stepin">Walk into the lab <span class="ko-inline">가상 연구실</span></a>
+      </p>
+    </div>
+
+    <!-- The four areas, taken straight from research.txt so this list never goes stale. -->
+    <aside class="hero-areas" aria-labelledby="areasHead">
+      <p class="areas-head" id="areasHead">What we work on <span class="ko-head">연구 분야</span></p>
+      <ul class="area-list" id="heroAreas">
+        <li><div><b>Spatial Computing<br>Vision, Graphics &amp; 3D Representation</b>
+          <span>사람과 공간을 기계가 이해할 수 있는 형태로 복원합니다</span></div></li>
+        <li><div><b>Embodied &amp; Spatial Interaction<br>XR, Multimodal &amp; Body-Based Interaction</b>
+          <span>몸과 공간을 입력으로 삼는 상호작용을 설계합니다</span></div></li>
+        <li><div><b>Human Understanding &amp; Embodied Agents<br>Human Behavior, Social &amp; Adaptive Interaction</b>
+          <span>사람의 상태를 읽고 그에 맞춰 반응합니다</span></div></li>
+        <li><div><b>Physical AI &amp; Digital Twins<br>Real-World Intelligent Systems</b>
+          <span>물리 세계에서 작동하는 AI와 현장 디지털 트윈</span></div></li>
+      </ul>
+      <a class="areas-more" href="research.html" id="areasMore">All four areas in detail <span aria-hidden="true">→</span></a>
+    </aside>
+  </div>
+</div>
+
+
+<!-- ...and from the research, straight into the space where you can meet it. -->
+<section class="stepin" id="stepin">
+  <div class="wrap stepin-grid" id="stepIn">
+    <div class="stepin-copy">
+      <p class="eyebrow">Virtual Lab · 가상 연구실</p>
+      <h2>And you can <em>walk into it.</em></h2>
+      <p class="h2-ko">그리고 그 연구실에, 지금 걸어 들어올 수 있습니다.</p>
+      <p class="lede">Each of those areas has a room. The lab is also a WebXR space that opens from this
+        browser — or from an XR headset.</p>
+      <p class="lede-ko">위의 연구 분야는 각각 하나의 방으로 만들어져 있습니다.</p>
+      <p class="cta-row">
+        <a class="btn primary big" href="xr/">Enter the virtual lab <span class="ko-inline" style="color:rgba(255,255,255,.8)">가상 연구실 들어가기</span></a>
+      </p>
+      <p class="greeter">
+        <img src="assets/agents/hyeongil-head.png" alt="Hyeongil, the guide agent" width="144" height="156">
+        <span><b>Hyeongil</b> is at the door. Ask him about a paper, about joining, about a collaboration —
+          he walks you there and takes a message.
+          <span class="ko-inline">안내 에이전트가 입구에서 기다립니다.</span></span>
+      </p>
+    </div>
+
+    <figure class="plan big">
+            <!-- True plan of the Unity scene: the room is 16 x 16 m and this drawing is 20 px per metre.
+           svg_x = 190 + 20 * world_x     svg_y = 186 - 20 * world_z -->
+      <svg viewBox="0 0 380 378" role="img" aria-label="Scale floor plan of the virtual lab, 16 by 16 metres: lobby, research wing, vision wall, admissions corner, collaboration corner and interaction bench.">
+        <!-- 4 m grid -->
+        <g aria-hidden="true">
+          <line class="grid-line" x1="30" y1="106" x2="350" y2="106"/>
+          <line class="grid-line" x1="30" y1="186" x2="350" y2="186"/>
+          <line class="grid-line" x1="30" y1="266" x2="350" y2="266"/>
+          <line class="grid-line" x1="110" y1="26" x2="110" y2="346"/>
+          <line class="grid-line" x1="190" y1="26" x2="190" y2="346"/>
+          <line class="grid-line" x1="270" y1="26" x2="270" y2="346"/>
+        </g>
+        <rect class="room" x="30" y="26" width="320" height="320"/>
+
+        <!-- the loop a visitor walks -->
+        <path class="route" d="M190 318 L190 268 L104 256 L92 104 L110 72 L190 58 L268 70 L318 104 L322 190 L300 236 L246 268 L196 300"/>
+
+        <!-- zones, drawn where they really are -->
+        <g class="z" role="link" tabindex="0" data-target="xr/" aria-label="Lobby">
+          <rect class="zone" x="126" y="222" width="128" height="68"/>
+          <text class="zlabel" x="190" y="250" text-anchor="middle">Lobby</text>
+          <text class="zlabel sub" x="190" y="261" text-anchor="middle">로비 · 언어 선택 · 안내</text>
+        </g>
+
+        <g class="z" role="link" tabindex="0" data-target="research.html" aria-label="Research wing">
+          <rect class="zone" x="40" y="78" width="40" height="196"/>
+          <text class="zlabel" x="52" y="176" text-anchor="middle" transform="rotate(-90 52 176)">Research 연구 전시</text>
+        </g>
+        <g aria-hidden="true">
+          <text class="zlabel sub" x="69" y="257" text-anchor="middle">01</text>
+          <text class="zlabel sub" x="69" y="205" text-anchor="middle">02</text>
+          <text class="zlabel sub" x="69" y="153" text-anchor="middle">03</text>
+          <text class="zlabel sub" x="69" y="101" text-anchor="middle">04</text>
+        </g>
+
+        <g class="z" role="link" tabindex="0" data-target="research.html#vision" aria-label="Vision wall">
+          <rect class="zone" x="118" y="34" width="150" height="34"/>
+          <text class="zlabel" x="193" y="49" text-anchor="middle">Vision wall</text>
+          <text class="zlabel sub" x="193" y="60" text-anchor="middle">앞으로의 방향</text>
+        </g>
+
+        <g class="z" role="link" tabindex="0" data-target="join.html" aria-label="Admissions corner">
+          <rect class="zone" x="38" y="34" width="78" height="44"/>
+          <text class="zlabel" x="77" y="48" text-anchor="middle">Admissions</text>
+          <text class="zlabel sub" x="77" y="59" text-anchor="middle">입학 상담</text>
+          <text class="zlabel sub" x="77" y="70" text-anchor="middle">advising desk</text>
+        </g>
+
+        <g class="z" role="link" tabindex="0" data-target="collaboration.html" aria-label="Collaboration corner">
+          <rect class="zone" x="300" y="88" width="42" height="80"/>
+          <text class="zlabel" x="321" y="128" text-anchor="middle" transform="rotate(-90 321 128)">Collaboration 협력</text>
+        </g>
+
+        <g class="z" role="link" tabindex="0" data-target="teaching.html" aria-label="Interaction bench">
+          <rect class="zone" x="274" y="224" width="62" height="64"/>
+          <text class="zlabel" x="305" y="248" text-anchor="middle">Bench</text>
+          <text class="zlabel sub" x="305" y="259" text-anchor="middle">인터랙션</text>
+          <text class="zlabel sub" x="305" y="270" text-anchor="middle">체험</text>
+        </g>
+
+        <!-- who is waiting for you, and where you come in -->
+        <g aria-hidden="true">
+          <circle class="mark host" cx="238" cy="274" r="3"/>
+          <text class="zlabel sub" x="245" y="277">Hyeongil</text>
+          <circle class="mark host" cx="144" cy="278" r="2.5"/>
+          <text class="zlabel sub" x="112" y="281" text-anchor="end">Jake</text>
+          <circle class="you-ring" cx="190" cy="318" r="4"/>
+          <circle class="you" cx="190" cy="318" r="4"/>
+          <text class="zlabel sub" x="200" y="321">you start here · 여기서 시작</text>
+        </g>
+
+        <!-- scale bar: this is a real 16 x 16 m room -->
+        <g aria-hidden="true">
+          <line class="dim" x1="30" y1="360" x2="110" y2="360"/>
+          <line class="dim" x1="30" y1="356" x2="30" y2="364"/>
+          <line class="dim" x1="110" y1="356" x2="110" y2="364"/>
+          <text class="zlabel sub" x="116" y="363">4 m</text>
+          <text class="zlabel sub" x="350" y="363" text-anchor="end">16 × 16 m · 1 : 20</text>
+        </g>
+      </svg>
+      <figcaption>Drawn to scale from the real space — 16 × 16 m, 1 : 20. Click a room to read about it.<br>
+        가상 연구실 실제 좌표 그대로 그린 도면입니다. 각 구역을 누르면 해당 페이지로 이동합니다.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="teasers">
+    <h2>Where to go next <span class="ko-head">다음으로</span></h2>
+    <div class="cards">
+      <a class="card link-card" href="research.html">
+        <span class="badge">Research 연구</span>
+        <h3>Four rooms, one question</h3>
+        <p>Foundations · interaction · human understanding · Physical AI</p>
+      </a>
+      <a class="card link-card" href="publications.html">
+        <span class="badge">Publications 논문</span>
+        <h3>IEEE ISMAR, IEEE VR, TVCG</h3>
+        <p>Selected work, with the figures</p>
+      </a>
+      <a class="card link-card" href="news.html">
+        <span class="badge">News 소식</span>
+        <h3>Talks, awards, milestones</h3>
+        <p>What the lab has been doing lately</p>
+      </a>
+      <a class="card link-card" href="join.html">
+        <span class="badge">Join 합류</span>
+        <h3>Come in and ask first</h3>
+        <p>Graduate, undergraduate and visiting researchers</p>
+      </a>
     </div>
   </section>
-
-  <section id="contact">
-    <h2>연락처</h2>
-    <dl class="contact">
-      <dt>이메일</dt><dd><a href="mailto:skagusrlf@hanyang.ac.kr">skagusrlf@hanyang.ac.kr</a></dd>
-      <dt>전화</dt><dd>031-400-1056</dd>
-      <dt>주소</dt><dd>경기도 안산시 상록구 한양대학로 55, 한양대학교 ERICA</dd>
-    </dl>
-  </section>
-
-  <footer>© 2026 Intelligent Reality Lab, Hanyang University ERICA</footer>
 </div>
+
+
+<footer class="site-foot">
+  <div class="wrap foot-grid">
+    <div>
+      <img class="univ-footer" src="assets/brand/hanyang-erica.png" alt="Hanyang University ERICA"
+           onerror="this.remove()">
+      <p class="foot-addr">Intelligent Reality Lab · 지능형 현실 연구실<br>
+        Hanyang University ERICA, 55 Hanyangdaehak-ro, Sangnok-gu, Ansan, Gyeonggi-do, Korea<br>
+        <a href="mailto:skagusrlf@hanyang.ac.kr">skagusrlf@hanyang.ac.kr</a> · 031-400-1056</p>
+    </div>
+    <div>
+      <p class="foot-links"><a href="index.html">Home</a> · <a href="research.html">Research</a> · <a href="publications.html">Publications</a> · <a href="news.html">News</a> · <a href="teaching.html">Teaching</a> · <a href="people.html">People</a> · <a href="collaboration.html">Collaboration</a> · <a href="join.html">Join</a></p>
+      <p class="credits">The virtual lab is built with Unity and WebXR. The guide's 3D avatar was created with
+        <a href="https://avaturn.me" rel="noopener">Avaturn</a> and modified; animations from
+        <a href="https://www.mixamo.com" rel="noopener">Mixamo</a>. Asset credits:
+        <a href="xr/#credits">virtual lab page</a>.</p>
+      <p class="credits">© 2026 Intelligent Reality Lab, Hanyang University ERICA</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
 </body>
 </html>
