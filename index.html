@@ -52,13 +52,18 @@
 
 <!-- The front page opens with the lab, not with the virtual space: who we are and what the
      work has done. The virtual lab follows from it, in the section below. -->
-<div class="hero-lab">
-  <div class="wrap hero-lab-grid" id="homeHero">
-    <div class="hero-copy">
+<div class="hero-lab" id="homeHero">
+  <!-- The headline gets a wider container than the rest, so the sentence can stay on one
+       line without shrinking to body-text size. site.js fits it exactly. -->
+  <div class="wrap wide hero-head">
       <p class="eyebrow">Hanyang University ERICA · ICT Convergence</p>
       <!-- These words come from home.txt; what is written here shows if that file is missing. -->
-      <h1>We build interactions that bridge<br><em>people, digital worlds, and physical reality.</em></h1>
+      <h1>We build interactions that bridge <em>people, digital worlds, and physical reality.</em></h1>
       <p class="h1-ko">사람과 디지털 세계, 물리적 현실을 연결하는 상호작용을 만듭니다.</p>
+  </div>
+
+  <div class="wrap hero-lab-grid">
+    <div class="hero-copy">
       <p class="lede">The Intelligent Reality Lab (IRL) explores how people interact with technology
         across physical and virtual worlds.</p>
       <p class="lede2">Our research brings together XR, Human–Computer Interaction, computer vision and

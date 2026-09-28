@@ -177,11 +177,18 @@ header.top nav a.enter:hover { background: var(--navy); color: #fff; }
 }
 .hero-lab-grid { display: grid; grid-template-columns: 1.02fr 1fr; gap: 52px; align-items: center; }
 .hero-lab h1 {
-  /* the headline is a full sentence now, so it is set a little smaller than a three-word one */
-  margin: 0; font-size: clamp(31px, 3.9vw, 47px); line-height: 1.12;
-  font-weight: 800; letter-spacing: -0.032em;
+  /* A full sentence across the whole width: sized from the viewport so English and Korean
+     each land on one line on a normal screen. Below ~900px it wraps rather than overflowing -
+     a headline running off the side of a phone is worse than a headline on two lines. */
+  margin: 0; font-size: clamp(26px, 3.35vw, 46px); line-height: 1.14;
+  font-weight: 800; letter-spacing: -0.032em; max-width: none;
 }
-.hero-lab .h1-ko { margin: 16px 0 0; font-size: clamp(17px, 2.1vw, 21px); font-weight: 600; color: var(--navy); }
+.hero-lab .h1-ko { margin: 14px 0 0; font-size: clamp(15px, 1.55vw, 21px); font-weight: 600;
+                   color: var(--navy); max-width: none; }
+/* the headline block spans both columns; the two columns start below it */
+.hero-head { margin-bottom: 40px; }
+/* the headline block alone runs wider than the body of the page */
+.wrap.wide { max-width: 1400px; }
 .hero-lab .lede { margin: 24px 0 0; max-width: 46ch; font-size: 17px; }
 .hero-lab .lede-ko { margin: 12px 0 0; max-width: 46ch; color: var(--muted); font-size: 15.5px; }
 .hero-lab .lede2 { margin: 16px 0 0; max-width: 46ch; font-size: 17px; }
@@ -267,8 +274,10 @@ section h2 {
 }
 section h2 .ko-head { text-transform: none; letter-spacing: 0; font-size: 13px; }
 section .lead {
-  margin: 0 0 22px; font-size: clamp(24px, 3vw, 32px); font-weight: 700;
-  letter-spacing: -0.03em; line-height: 1.25; max-width: 22ch;
+  /* no ch cap: these are the page's headline sentence and should read as one line
+     where the screen allows it, the same way the front page headline does */
+  margin: 0 0 22px; font-size: clamp(21px, 2.5vw, 31px); font-weight: 700;
+  letter-spacing: -0.03em; line-height: 1.25;
 }
 section .lead .ko-inline { display: block; margin: 6px 0 0; font-size: 17px; font-weight: 500; }
 section p { margin: 0 0 14px; max-width: 64ch; }

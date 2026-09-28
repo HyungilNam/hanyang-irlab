@@ -144,6 +144,61 @@
     });
   }
 
+  /* ------------------------------------------------- headline sentences on one line
+     The big sentences - the front page headline in both languages, and the lead line on the
+     inner pages - are meant to read as a single line. How long they are is up to whoever edits
+     home.txt, so rather than guessing a font size in CSS we measure and shrink to fit.
+     If even the smallest size would not fit (a phone, or a very long sentence), we let it wrap:
+     a headline running off the side of the screen is worse than one on two lines.            */
+  function fitOneLine(el, maxPx, minPx) {
+    if (!el || !el.textContent.trim()) return;
+    el.style.whiteSpace = "nowrap";
+    el.style.fontSize = maxPx + "px";
+
+    // A Range measures the text itself. scrollWidth is no use here: on a block element whose
+    // overflow is visible, the browser reports it as the element's own width even when the
+    // line runs past the edge.
+    var range = document.createRange();
+    function textWidth() {
+      range.selectNodeContents(el);
+      return range.getBoundingClientRect().width;
+    }
+
+    var room = el.clientWidth;
+    if (!room) return;
+    var wide = textWidth();
+    if (wide > room) {
+      // widths scale linearly with font size, so one step lands very close
+      var size = Math.floor(maxPx * room / wide);
+      if (size < minPx) size = minPx;
+      el.style.fontSize = size + "px";
+      // ...and a couple of single-pixel steps settle rounding and letter-spacing
+      while (size > minPx && textWidth() > room) {
+        size -= 1;
+        el.style.fontSize = size + "px";
+      }
+      if (textWidth() > room) {
+        el.style.whiteSpace = "";          // give up on one line rather than overflow
+        el.style.fontSize = minPx + "px";
+      }
+    }
+  }
+
+  function fitHeadlines() {
+    fitOneLine(document.querySelector(".hero-lab h1"), 46, 23);
+    fitOneLine(document.querySelector(".hero-lab .h1-ko"), 24, 14);
+    Array.prototype.forEach.call(document.querySelectorAll("section .lead, .page-head .lead"),
+      function (el) { fitOneLine(el, 31, 17); });
+  }
+
+  fitHeadlines();
+  window.addEventListener("load", fitHeadlines);
+  var fitTimer = null;
+  window.addEventListener("resize", function () {
+    clearTimeout(fitTimer);
+    fitTimer = setTimeout(fitHeadlines, 120);
+  });
+
   /* ------------------------------------------------ front page text (home.txt)
      The words on the front page live in a text file so they can be rewritten without touching HTML.
      What is written in index.html stays as the fallback if the file is missing.               */
@@ -194,6 +249,7 @@
         var step = blocks.filter(function (b) { return b.block === "step"; })[0];
         fillBlock(homeHero, hero);
         fillBlock(document.getElementById("stepIn"), step);
+        fitHeadlines();          // the sentence just changed; measure it again
         if (hero) {
           var head = document.getElementById("areasHead");
           if (head && hero.areashead) {
