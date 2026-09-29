@@ -5,10 +5,13 @@
 # 내리고 싶으면 그 칸을 지우거나, 맨 앞에 hide: yes 한 줄만 넣으면 됩니다.
 #
 # 쓸 수 있는 항목 (필요 없는 줄은 그냥 지우세요)
-#   tag     : foundation / interact / understand / deploy  중 하나. 페이지의 필터 버튼과 연결됩니다.
+#   tag     : foundation / interact / understand / deploy  중 하나. 논문 옆에 연구 분야로 표시됩니다.
 #   title   : 논문 제목
 #   authors : 저자
 #   venue   : 학술지 · 학회와 연도
+#   year    : 선택. 페이지는 연도별로 묶어 보여 줍니다.
+#             적지 않으면 venue 에서 마지막 네 자리 연도를 읽습니다.
+#             venue 에 연도가 여러 번 나오고 엉뚱한 것이 잡힐 때만 적으시면 됩니다.
 #   award   : 수상 (없으면 줄을 지웁니다)
 #   image   : assets/research/ 안의 파일 이름 (없으면 줄을 지웁니다)
 #   link    : 논문 주소 (넣으면 제목이 링크가 됩니다)

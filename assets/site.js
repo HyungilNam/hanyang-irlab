@@ -422,31 +422,33 @@
       .then(function (text) {
         var items = parseRecords(text);
 
-        // The publications page groups by research area instead of offering a filter bar:
-        // the reader sees every paper, under the heading that says what it belongs to.
+        // Grouped by year, newest first. The year comes from an explicit "year:" line when there
+        // is one, otherwise from the last four-digit year in the venue - which is where it sits
+        // in every entry so far ("IEEE TVCG (IEEE VR 2025 special issue), 2025" -> 2025).
+        function yearOf(p) {
+          if (p.year && /^\d{4}$/.test(p.year.trim())) return p.year.trim();
+          var found = String(p.venue || "").match(/\b(?:19|20)\d{2}\b/g);
+          return found ? found[found.length - 1] : "";
+        }
+
         if (pubGroups) {
-          var order = ["foundation", "interact", "understand", "deploy"];
-          var html = "";
-          order.forEach(function (tag) {
-            var group = items.filter(function (p) { return p.tag === tag; });
-            if (!group.length) return;
-            html += '<h2 class="pub-group">' + esc(TAG_LABEL[tag]) + '</h2><ul class="pubs"></ul>';
+          var years = [];
+          items.forEach(function (p) {
+            var y = yearOf(p);
+            if (years.indexOf(y) < 0) years.push(y);
           });
-          pubGroups.innerHTML = html;
+          // newest first; anything with no year readable at all goes last
+          years.sort(function (x, y) { return (y || "0") .localeCompare(x || "0"); });
+
+          pubGroups.innerHTML = years.map(function (y) {
+            return '<h2 class="pub-group">' + esc(y || "Other") + "</h2><ul class=\"pubs\"></ul>";
+          }).join("");
+
           var lists = pubGroups.querySelectorAll("ul.pubs");
-          var i = 0;
-          order.forEach(function (tag) {
-            var group = items.filter(function (p) { return p.tag === tag; });
-            if (!group.length) return;
-            render(lists[i++], group, "all", true);
+          years.forEach(function (y, i) {
+            // The area is worth showing on each paper now that the heading is a year.
+            render(lists[i], items.filter(function (p) { return yearOf(p) === y; }), "all", false);
           });
-          var rest = items.filter(function (p) { return order.indexOf(p.tag) < 0; });
-          if (rest.length) {
-            var extra = document.createElement("ul");
-            extra.className = "pubs";
-            pubGroups.appendChild(extra);
-            render(extra, rest, "all", true);
-          }
           onReveal();
           return;
         }

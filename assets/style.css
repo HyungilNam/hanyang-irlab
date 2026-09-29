@@ -117,13 +117,15 @@ header.top nav a.enter:hover { background: var(--navy); color: #fff; }
 .hero .lede-ko { margin: 12px 0 0; max-width: 46ch; color: var(--muted); font-size: 15.5px; }
 .hero .cta-row { margin-top: 30px; }
 /* the agent who actually greets visitors, right next to the way in */
-.hero .greeter, .hero-lab .greeter {
-  display: flex; align-items: center; gap: 14px; margin: 26px 0 0; max-width: 42ch;
+/* The guide introduces himself: his face first, then what he does under it. */
+.hero .greeter, .hero-lab .greeter, .stepin .greeter {
+  display: block; margin: 26px 0 0; max-width: 42ch;
   color: var(--muted); font-size: 14.5px; line-height: 1.55;
 }
-.hero .greeter img, .hero-lab .greeter img {
-  width: 72px; height: 78px; object-fit: cover; object-position: 50% 10%;
-  border: 1px solid var(--line); background: var(--paper-2); flex: none;
+.hero .greeter img, .hero-lab .greeter img, .stepin .greeter img {
+  display: block; width: 108px; height: 117px; margin: 0 0 12px;
+  object-fit: cover; object-position: 50% 8%;
+  border: 1px solid var(--line); border-radius: 6px; background: var(--paper-2);
 }
 .hero .greeter b, .hero-lab .greeter b { color: var(--ink); }
 
