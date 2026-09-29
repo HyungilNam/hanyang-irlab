@@ -187,8 +187,6 @@ header.top nav a.enter:hover { background: var(--navy); color: #fff; }
                    color: var(--navy); max-width: none; }
 /* the headline block spans both columns; the two columns start below it */
 .hero-head { margin-bottom: 40px; }
-/* the headline block alone runs wider than the body of the page */
-.wrap.wide { max-width: 1400px; }
 .hero-lab .lede { margin: 24px 0 0; max-width: 46ch; font-size: 17px; }
 .hero-lab .lede-ko { margin: 12px 0 0; max-width: 46ch; color: var(--muted); font-size: 15.5px; }
 .hero-lab .lede2 { margin: 16px 0 0; max-width: 46ch; font-size: 17px; }
