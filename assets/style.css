@@ -123,10 +123,12 @@ header.top nav a.enter:hover { background: var(--navy); color: #fff; }
   color: var(--muted); font-size: 14.5px; line-height: 1.55;
 }
 .hero .greeter img, .hero-lab .greeter img, .stepin .greeter img {
-  display: block; width: 108px; height: 117px; margin: 0 0 12px;
-  object-fit: cover; object-position: 50% 8%;
-  border: 1px solid var(--line); border-radius: 6px; background: var(--paper-2);
+  /* The pair stand at their own proportions on the page background - no frame, no crop:
+     a box around a cut-out figure reads as a photograph of a screen. */
+  display: block; width: auto; height: 240px; margin: 0 0 14px;
 }
+/* The long affiliation line needs room to breathe above the headline. */
+.hero-lab .eyebrow, .stepin .eyebrow { line-height: 1.5; max-width: 60ch; }
 .hero .greeter b, .hero-lab .greeter b { color: var(--ink); }
 
 /* the drawn plan */
