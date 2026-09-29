@@ -14,6 +14,10 @@
 #             venue 에 연도가 여러 번 나오고 엉뚱한 것이 잡힐 때만 적으시면 됩니다.
 #   award   : 수상 (없으면 줄을 지웁니다)
 #   image   : assets/research/ 안의 파일 이름 (없으면 줄을 지웁니다)
+#             **JPG 로 넣어 주세요.** PNG 는 투명 배경을 가질 수 있고, 그 투명 부분이
+#             검정 위에 합성되는 곳(일부 PDF 뷰어·썸네일 생성기·메일 클라이언트)에서
+#             그림이 까맣게 보입니다. PNG 밖에 없으면 이 명령으로 바꾸시면 됩니다:
+#               powershell -ExecutionPolicy Bypass -File tools\figures-to-jpg.ps1
 #   link    : 논문 주소 (넣으면 제목이 링크가 됩니다)
 #   hide    : yes 라고 적으면 페이지에 나오지 않습니다
 #
