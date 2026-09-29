@@ -204,27 +204,29 @@
 </div>
 
 <script>
-  // Address of the virtual space (the WebGL build). It is NOT in this repository: it lives on
-  // the lab server, so rebuilding the space does not add 50 MB to the git history every time.
+  // Where the virtual space lives. It is not in this repository: it sits on the lab server,
+  // so rebuilding it does not add 50 MB to the git history every time.
   //
-  // Leave this empty while the server is not serving it yet - the page then says "opens soon"
-  // rather than offering a door that leads nowhere. Set it in two steps:
-  //
-  //   1. once deploy_space.sh has run, while the site is still on GitHub Pages:
-  //        const BUILD_URL = "https://13-125-125-221.sslip.io/space/";
-  //   2. once irlab.hanyang.ac.kr points at the lab server and the site is served from it,
-  //      the space is on the same origin, so a plain path is enough:
-  //        const BUILD_URL = "/space/";
-  //
-  // Either way nothing else changes: the build and the agent API always share an origin,
-  // so there is no CORS and no api-config.json.
-  const BUILD_URL = "https://13-125-125-221.sslip.io/space/";
+  // This page is served from two places - the lab server, and the GitHub Pages copy that is
+  // kept as a fallback. On the server the space is one path away. On the fallback copy, and
+  // for anyone whose DNS still points at GitHub while the record moves, it is not there at
+  // all, so the link has to address the server directly. Rather than guess from the hostname
+  // (which is the same name in both cases during the move), ask.
+  const SPACE_HERE = "/space/";
+  const SPACE_DIRECT = "https://13-125-125-221.sslip.io/space/";
+  const BUILD_URL = SPACE_HERE;
 
   const enter = document.getElementById('enter');
   const status = document.getElementById('status');
 
   if (BUILD_URL) {
     enter.href = BUILD_URL;
+    // If the space is not on this host, point the door at the server instead. A visitor
+    // reading the page takes far longer than this check, so the link is right by the time
+    // anyone clicks it.
+    fetch(SPACE_HERE, { method: "HEAD" })
+      .then(function (r) { if (!r.ok) enter.href = SPACE_DIRECT; })
+      .catch(function () { enter.href = SPACE_DIRECT; });
     enter.removeAttribute('aria-disabled');
     status.innerHTML = navigator.xr
       ? "This browser supports XR. If you are wearing a headset, press the VR button after entering. <span class=\"ko-inline\">헤드셋을 쓰고 계시면 입장 후 VR 버튼을 누르세요.</span>"
