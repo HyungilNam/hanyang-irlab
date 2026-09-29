@@ -510,3 +510,81 @@ footer .credits { display: block; margin-top: 8px; }
   html { scroll-behavior: auto; }
   .reveal, .reveal.in { opacity: 1; transform: none; transition: none; }
 }
+
+/* ---------------------------------------------------------------- course: term project page */
+.crumb { margin: 0 0 10px; color: var(--muted); font-size: 14px; letter-spacing: .01em; }
+.crumb a { color: var(--muted); text-decoration: none; border-bottom: 1px solid var(--line); }
+.crumb a:hover { color: var(--navy); border-color: var(--navy); }
+
+h3.sub {
+  margin: 34px 0 0; font-size: 13px; font-weight: 700; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--deep);
+}
+h3.sub .ko-head { text-transform: none; letter-spacing: 0; font-size: 13px; }
+
+/* small Korean gloss inside a card badge — the badge is uppercase and tracked out,
+   which Korean should not inherit */
+.card .badge i {
+  font-style: normal; text-transform: none; letter-spacing: 0;
+  margin-left: .55em; font-weight: 600; color: var(--muted);
+}
+
+/* the per-size requirement counts read as a short spec list, not prose */
+ul.plain.req { margin: 0 0 14px; }
+ul.plain.req b { color: var(--ink); font-variant-numeric: tabular-nums; }
+
+/* screenshots of the example space, sitting in the same card grid as everything else */
+.card.shotcard { padding: 0; }
+.card.shotcard img { width: 100%; height: 176px; object-fit: cover; display: block; }
+.card.shotcard figcaption {
+  padding: 16px 20px 18px; color: var(--muted); font-size: 14.5px; line-height: 1.6;
+}
+.card.shotcard figcaption b {
+  display: block; margin-bottom: 4px; color: var(--deep);
+  font-size: 12px; font-weight: 700; letter-spacing: .12em;
+}
+
+/* comparison tables: solo / pair / trio, the roadmap, the mark scheme */
+table.compare { border-collapse: collapse; width: 100%; margin: 26px 0 12px; font-size: 16px; }
+table.compare th, table.compare td {
+  text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line-soft); vertical-align: top;
+}
+table.compare thead th {
+  border-bottom: 1px solid var(--line); color: var(--deep);
+  font-size: 12.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+}
+table.compare thead th i {
+  font-style: normal; text-transform: none; letter-spacing: 0;
+  margin-left: .5em; font-weight: 600; color: var(--muted);
+}
+table.compare thead th .ko-inline { display: block; margin-left: 0; letter-spacing: 0; text-transform: none; }
+table.compare tbody th { font-weight: 600; color: var(--ink); }
+table.compare tbody th .ko-inline { display: block; margin-left: 0; }
+table.compare tbody td { color: var(--muted); font-variant-numeric: tabular-nums; }
+table.compare tbody tr:hover { background: var(--paper-2); }
+table.compare tr.milestone th, table.compare tr.milestone td { color: var(--ink); }
+table.compare tr.milestone th[scope="row"] { color: var(--navy); }
+
+@media (max-width: 720px) {
+  table.compare { font-size: 15px; }
+  table.compare th, table.compare td { padding: 9px 8px; }
+  /* four columns do not fit a phone on their natural widths, and a table that is
+     wider than the page pushes the whole document sideways. Fix the layout and let
+     the long cells wrap instead. */
+  table.compare { table-layout: fixed; }
+  table.compare th, table.compare td { overflow-wrap: anywhere; }
+  table.compare thead th:first-child, table.compare tbody th { width: 36%; }
+  .card.shotcard img { height: 200px; }
+}
+
+/* a whole card that is a link (teaching index → term project page) */
+a.link-card { text-decoration: none; color: inherit; display: block; }
+a.link-card h3 { color: var(--navy); }
+a.link-card:hover { background: var(--navy-soft); }
+
+/* figure is still a figure: kill the browser's default 40px side margin inside the grid cell */
+.card.shotcard { margin: 0; }
+/* the two agents are a cut-out on white, not a view of the room — show all of them */
+.card.shotcard.cutout img { object-fit: contain; background: #fff; padding: 8px 0 0; }
+/* a button row is a row, not body copy: it must not inherit the 64ch measure */
+section p.cta-row { max-width: none; margin-top: 26px; }

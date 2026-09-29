@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Term Project Requirements — 3D User Interfaces | Intelligent Reality Lab</title>
+<meta name="description" content="3D User Interfaces, Fall 2026 term project — requirements for solo, pair and trio teams, and the example space to check them against.">
+<meta property="og:title" content="Term Project Requirements — 3D User Interfaces">
+<meta property="og:description" content="Requirements for solo, pair and trio teams, and the example space to check them against.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://irlab.hanyang.ac.kr/teaching-3dui.html">
+<meta property="og:image" content="https://irlab.hanyang.ac.kr/assets/course/space_entrance.jpg">
+<link rel="canonical" href="https://irlab.hanyang.ac.kr/teaching-3dui.html">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap topbar">
+
+    <a class="brand first" href="index.html" aria-label="Intelligent Reality Lab, home">
+      <svg class="irl-mark" viewBox="0 0 64 64" role="img" aria-label="Intelligent Reality Lab">
+        <rect class="tile" x="2" y="2" width="60" height="60" rx="8"/>
+        <text class="letters" x="32" y="41" text-anchor="middle">IRL</text>
+        <circle class="mind" cx="50" cy="15" r="4.5"/>
+      </svg>
+      <span class="brand-names">
+        <span class="ko-name">지능형 현실 연구실</span>
+        <span class="en-name">Intelligent Reality Lab</span>
+      </span>
+    </a>
+    <a class="univ-link" href="https://www.hanyang.ac.kr/" rel="noopener"
+       aria-label="Hanyang University ERICA">
+      <img class="univ" src="assets/brand/hanyang-erica.png" alt="Hanyang University ERICA"
+           onerror="this.remove()">
+    </a>
+  </div>
+  <nav class="wrap mainnav" aria-label="Main menu">
+    <a href="index.html">Home <span class="ko-inline">홈</span></a>
+    <a href="research.html">Research <span class="ko-inline">연구</span></a>
+    <a href="publications.html">Publications <span class="ko-inline">논문</span></a>
+    <a href="news.html">News <span class="ko-inline">소식</span></a>
+    <a class="active" href="teaching.html">Teaching <span class="ko-inline">수업</span></a>
+    <a href="people.html">People <span class="ko-inline">구성원</span></a>
+    <a href="collaboration.html">Collaboration <span class="ko-inline">협력</span></a>
+    <a href="join.html">Join <span class="ko-inline">합류</span></a>
+    <a class="enter" href="xr/">Virtual Lab <span class="ko-inline">가상 연구실</span></a>
+  </nav>
+</header>
+
+
+<div class="wrap">
+
+  <section class="page-head">
+    <p class="crumb"><a href="teaching.html">Teaching</a> · 3D User Interfaces, Fall 2026</p>
+    <h1>Term Project Requirements <span class="ko-head">과제 요구사항</span></h1>
+    <p class="lead">Build your own interactive WebXR space.
+      <span class="ko-inline">웹과 XR에서 모두 열리는 3D 공간을 직접 설계하고 구현합니다.</span></p>
+    <p class="section-lede">What is required of you depends on how many of you there are. Start by
+      walking the example space below, then read the requirements for your team size.</p>
+    <p class="ko">요구사항은 팀 인원에 따라 다릅니다. 먼저 아래 예시 공간을 직접 둘러보고,
+      해당하는 인원의 요구사항을 확인하세요.</p>
+    <p class="cta-row">
+      <a class="btn primary" href="xr/">Walk the example space <span class="ko-inline">예시 공간 둘러보기</span></a>
+      <a class="btn" href="#requirements">Requirements <span class="ko-inline">인원별 요구사항</span></a>
+    </p>
+  </section>
+
+  <section id="example">
+    <h2>01 · Check the example first <span class="ko-head">예시 확인</span></h2>
+    <p class="lead">This lab's virtual space is built on the same template you get.</p>
+    <p>Open it, walk it, and read it as a design rather than as a demo. Most of what the requirements
+      ask for is visible somewhere in it, so going and finding each one is the fastest way to see what
+      is being asked. It is an example, not a model answer — yours does not have to look like it.</p>
+    <p class="ko">이 연구실의 가상 공간은 여러분이 받는 템플릿으로 만들었습니다. 데모가 아니라
+      <b>설계</b>로 읽어 보세요. 요구사항에서 말하는 것들을 대부분 그 공간 안에서 볼 수 있으니,
+      직접 하나씩 찾아보는 것이 요구사항을 이해하는 가장 빠른 방법입니다. 다만 이것은 <b>모범 답안이
+      아니라 하나의 예시</b>입니다. 여러분의 공간이 이것을 닮을 필요는 없습니다.</p>
+
+    <div class="cards three">
+      <figure class="card shotcard">
+        <img src="assets/course/space_entrance.jpg" alt="The entrance of the virtual lab" width="900" height="576" loading="lazy">
+        <figcaption><b>ENTRY</b>One clear place to arrive, and a sightline to everything else.
+          <span class="ko-inline">도착하는 곳이 하나, 거기서 나머지가 보입니다.</span></figcaption>
+      </figure>
+      <figure class="card shotcard">
+        <img src="assets/course/space_wing.jpg" alt="An information wing of the virtual lab" width="900" height="576" loading="lazy">
+        <figcaption><b>SPATIAL UI</b>Information lives on the wall at reading height, not on a flat overlay.
+          <span class="ko-inline">정보가 화면 위 오버레이가 아니라 공간 안에 놓여 있습니다.</span></figcaption>
+      </figure>
+      <figure class="card shotcard cutout">
+        <img src="assets/course/agents.jpg" alt="The guide agent and the dog agent" width="225" height="420" loading="lazy">
+        <figcaption><b>SIGNATURE</b>Here, an agent notices you and walks over. Yours need not be an
+          agent — it needs to be one thing, done properly.
+          <span class="ko-inline">여기서는 에이전트가 알아보고 다가옵니다. 여러분 것이 에이전트일
+          필요는 없습니다. 하나를 제대로 하면 됩니다.</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="notice">
+      <strong>Building the WebXR infrastructure from scratch is not the goal of this project</strong>,
+      The rig, navigation, grabbing, panels and the web build are already done, and rebuilding them
+      earns no extra marks. Your work is the space, the interactions and the experience — writing
+      your own scripts for those is expected.
+      <span class="ko-inline">WebXR 기반을 처음부터 만드는 것은 과제의 목표가 아닙니다.
+      이동·잡기·패널·웹 빌드는 이미 되어 있고, 이를 다시 만든다고 점수가 더 오르지는 않습니다.
+      여러분의 몫은 공간과 상호작용, 그리고 경험이며, 이를 위해 스크립트를 직접 작성하는 것은
+      당연히 포함됩니다.</span>
+    </div>
+    <p class="cta-row"><a class="btn" href="xr/">Enter the virtual lab <span class="ko-inline">가상 연구실 열기</span></a></p>
+  </section>
+
+  <section id="requirements">
+    <h2>02 · Requirements by team size <span class="ko-head">인원별 요구사항</span></h2>
+
+    <h3 class="sub">Side by side <span class="ko-head">한눈에 비교</span></h3>
+    <table class="compare">
+      <thead>
+        <tr><th scope="col">Requirement</th>
+            <th scope="col">Solo</th>
+            <th scope="col">Pair</th>
+            <th scope="col">Trio</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">Interactive objects</th>
+            <td>3</td><td>5</td><td>8</td></tr>
+        <tr><th scope="row">Spatial UI panels</th>
+            <td>2</td><td>3</td><td>4</td></tr>
+        <tr><th scope="row">Viewpoints</th>
+            <td>2</td><td>3</td><td>4</td></tr>
+        <tr><th scope="row">Zones</th>
+            <td>1, clearly arranged</td><td>2–3</td><td>3–4</td></tr>
+        <tr><th scope="row">Visitor flow</th>
+            <td>within one room</td><td>between zones</td><td>wayfinding across zones</td></tr>
+        <tr><th scope="row">Signature interaction</th>
+            <td>1</td><td>1</td><td>1 main + 1 secondary, in a different zone</td></tr>
+        <tr><th scope="row">Transition rationale</th>
+            <td>—</td><td>—</td><td>1 page</td></tr>
+      </tbody>
+    </table>
+    <p class="muted">The numbers are minimums, not targets.
+      <span class="ko-inline">위 숫자는 목표치가 아니라 <b>최소</b> 기준입니다.</span></p>
+
+    <div class="notice">
+      <strong>Choosing a size.</strong> A pair is the default. If you want to work alone or as a
+      three, ask me first — briefly, in person or by e-mail.
+      <span class="ko-inline">기본은 2인입니다. 혼자 하거나 3인으로 하고 싶다면 먼저 말씀해 주세요.
+      대면 또는 메일로 간단히 하면 됩니다.</span>
+    </div>
+
+    <div class="cards three sizes">
+      <div class="card">
+        <span class="badge">Solo <i>1인</i></span>
+        <h3>Build smaller than you think you should</h3>
+        <p>You are marked on depth, not breadth. One room where every object answers scores above a
+          larger space that is half furnished.</p>
+        <p class="ko"><b>혼자 할 때 주의할 점.</b> 넓이가 아니라 깊이로 평가합니다. 모든 것이 제대로
+          반응하는 방 하나가, 절반만 채운 넓은 공간보다 높은 점수를 받습니다.</p>
+      </div>
+      <div class="card">
+        <span class="badge">Pair <i>2인</i></span>
+        <h3>Do not split design from programming</h3>
+        <p>Both of you will be asked about both. Split by area instead — one takes navigation and
+          layout, one takes interaction and feedback — and review each other's work.</p>
+        <p class="ko"><b>둘이 할 때 나누는 법.</b> ‘기획’과 ‘개발’로 나누지 마세요. 두 사람 모두
+          양쪽을 질문받습니다. 대신 영역으로 나누고 — 한 명은 이동과 배치, 한 명은 상호작용과
+          피드백 — 서로의 작업을 검토하세요.</p>
+      </div>
+      <div class="card">
+        <span class="badge">Trio <i>3인</i></span>
+        <h3>One page on the transition between zones</h3>
+        <p>Why does a visitor move on to the next zone, and what carries over when they do? The extra
+          scope is judged on this, not on extra furniture.</p>
+        <p class="ko"><b>셋이 할 때 더 내는 것.</b> 구역과 구역 사이의 전환을 왜 그렇게 설계했는지
+          1쪽으로 씁니다. 방문자가 다음 구역으로 넘어가는 이유는 무엇이고, 넘어갈 때 무엇이
+          이어지는지 답해야 합니다.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+<footer class="site-foot">
+  <div class="wrap foot-grid">
+    <div>
+      <img class="univ-footer" src="assets/brand/hanyang-erica.png" alt="Hanyang University ERICA"
+           onerror="this.remove()">
+      <p class="foot-addr">Intelligent Reality Lab · 지능형 현실 연구실<br>
+        Hanyang University ERICA, 55 Hanyangdaehak-ro, Sangnok-gu, Ansan, Gyeonggi-do, Korea<br>
+        <a href="mailto:skagusrlf@hanyang.ac.kr">skagusrlf@hanyang.ac.kr</a> · 031-400-1056</p>
+    </div>
+    <div>
+      <p class="foot-links"><a href="index.html">Home</a> · <a href="research.html">Research</a> · <a href="publications.html">Publications</a> · <a href="news.html">News</a> · <a href="teaching.html">Teaching</a> · <a href="people.html">People</a> · <a href="collaboration.html">Collaboration</a> · <a href="join.html">Join</a></p>
+      <p class="credits">The virtual lab is built with Unity and WebXR. The guide's 3D avatar was created with
+        <a href="https://avaturn.me" rel="noopener">Avaturn</a> and modified; animations from
+        <a href="https://www.mixamo.com" rel="noopener">Mixamo</a>. Asset credits:
+        <a href="xr/#credits">virtual lab page</a>.</p>
+      <p class="credits">© 2026 Intelligent Reality Lab, Hanyang University ERICA</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
