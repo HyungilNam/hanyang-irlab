@@ -127,8 +127,15 @@ header.top nav a.enter:hover { background: var(--navy); color: #fff; }
   object-fit: cover; object-position: 50% 8%;
   border: 1px solid var(--line); border-radius: 6px; background: var(--paper-2);
 }
-/* The long affiliation line needs room to breathe above the headline. */
-.hero-lab .eyebrow, .stepin .eyebrow { line-height: 1.5; max-width: 60ch; }
+/* The affiliation reads as one line. The letter-spacing that suits a three-word label is too
+   wide for a sentence this long, so it is eased off and the size allowed to give a little. */
+.hero-lab .eyebrow, .stepin .eyebrow {
+  white-space: nowrap; letter-spacing: .08em; font-size: clamp(10.5px, 1.05vw, 13px);
+}
+@media (max-width: 640px) {
+  /* Below this it cannot fit at a readable size; wrapping beats shrinking to nothing. */
+  .hero-lab .eyebrow, .stepin .eyebrow { white-space: normal; font-size: 11px; }
+}
 .hero .greeter b, .hero-lab .greeter b { color: var(--ink); }
 
 /* the drawn plan */
