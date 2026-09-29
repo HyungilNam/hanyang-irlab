@@ -204,16 +204,20 @@
 </div>
 
 <script>
-  // Address of the virtual space (WebGL build). The space is NOT in this repository - it lives
-  // on the lab server, so that rebuilding it does not add 50 MB to the git history every time.
+  // Address of the virtual space (the WebGL build). It is NOT in this repository: it lives on
+  // the lab server, so rebuilding the space does not add 50 MB to the git history every time.
   //
-  // Leave this empty while the server is not serving it yet: the page then says "opens soon"
-  // instead of offering a door that leads nowhere. The moment deploy_space.sh has run, set it to
+  // Leave this empty while the server is not serving it yet - the page then says "opens soon"
+  // rather than offering a door that leads nowhere. Set it in two steps:
   //
-  //     const BUILD_URL = "https://api.irlab.hanyang.ac.kr/space/";
+  //   1. once deploy_space.sh has run, while the site is still on GitHub Pages:
+  //        const BUILD_URL = "https://13-125-125-221.sslip.io/space/";
+  //   2. once irlab.hanyang.ac.kr points at the lab server and the site is served from it,
+  //      the space is on the same origin, so a plain path is enough:
+  //        const BUILD_URL = "/space/";
   //
-  // and publish the site once more. Nothing else has to change - the build and the agent API
-  // share that origin, so there is no CORS and no api-config.json.
+  // Either way nothing else changes: the build and the agent API always share an origin,
+  // so there is no CORS and no api-config.json.
   const BUILD_URL = "";
 
   const enter = document.getElementById('enter');
