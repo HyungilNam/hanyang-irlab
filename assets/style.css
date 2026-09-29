@@ -545,7 +545,13 @@ ul.plain.req b { color: var(--ink); font-variant-numeric: tabular-nums; }
 }
 
 /* comparison tables: solo / pair / trio, the roadmap, the mark scheme */
-table.compare { border-collapse: collapse; width: 100%; margin: 26px 0 12px; font-size: 16px; }
+/* Fixed layout at every width, not only on a phone. On auto layout one long cell
+   ("1 main + 1 secondary, in a different zone") made the Trio column twice the width
+   of the others, so the numbers above it no longer lined up column to column.
+   Fixed layout gives the label column a third and splits the rest equally. */
+table.compare { border-collapse: collapse; width: 100%; margin: 26px 0 12px; font-size: 16px;
+                table-layout: fixed; }
+table.compare thead th:first-child, table.compare tbody th { width: 34%; }
 table.compare th, table.compare td {
   text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line-soft); vertical-align: top;
 }
@@ -568,10 +574,8 @@ table.compare tr.milestone th[scope="row"] { color: var(--navy); }
 @media (max-width: 720px) {
   table.compare { font-size: 15px; }
   table.compare th, table.compare td { padding: 9px 8px; }
-  /* four columns do not fit a phone on their natural widths, and a table that is
-     wider than the page pushes the whole document sideways. Fix the layout and let
-     the long cells wrap instead. */
-  table.compare { table-layout: fixed; }
+  /* on a phone the columns are narrow enough that a long word has to be allowed
+     to break, or it pushes the whole document sideways */
   table.compare th, table.compare td { overflow-wrap: anywhere; }
   table.compare thead th:first-child, table.compare tbody th { width: 36%; }
   .card.shotcard img { height: 200px; }
@@ -585,6 +589,6 @@ a.link-card:hover { background: var(--navy-soft); }
 /* figure is still a figure: kill the browser's default 40px side margin inside the grid cell */
 .card.shotcard { margin: 0; }
 /* the two agents are a cut-out on white, not a view of the room — show all of them */
-.card.shotcard.cutout img { object-fit: contain; background: #fff; padding: 8px 0 0; }
+.card.shotcard.cutout img { object-fit: contain; background: #fff; }
 /* a button row is a row, not body copy: it must not inherit the 64ch measure */
 section p.cta-row { max-width: none; margin-top: 26px; }
