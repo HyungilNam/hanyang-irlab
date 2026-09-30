@@ -501,6 +501,11 @@ footer .credits { display: block; margin-top: 8px; }
   .pub-thumb { max-width: 320px; }
   header.top .mainnav { gap: 12px; row-gap: 8px; font-size: 13.5px; padding: 0 20px 12px; }
   header.top .mainnav a.enter { margin-left: 0; padding: 4px 12px; }
+  /* Nine items with their Korean glosses wrapped to three rows on a phone, which is a fifth of
+     the screen spent on navigation before any of the page shows. The English labels are the
+     link text; the gloss beside each one is a courtesy that a narrow screen cannot afford.
+     The lab's own name in the masthead above keeps both languages. */
+  header.top .mainnav .ko-inline { display: none; }
   header.top .topbar { padding: 12px 20px 8px; }
   .univ { height: 24px; }
   .irl-mark { width: 30px; height: 30px; }
