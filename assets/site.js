@@ -446,8 +446,10 @@
 
           var lists = pubGroups.querySelectorAll("ul.pubs");
           years.forEach(function (y, i) {
-            // The area is worth showing on each paper now that the heading is a year.
-            render(lists[i], items.filter(function (p) { return yearOf(p) === y; }), "all", false);
+            // No research-area label on each paper: the list is organised by year, and the tag
+            // added a second, competing classification to every entry. The tag: line stays in
+            // publications.txt - it is still what the home page and the filters read.
+            render(lists[i], items.filter(function (p) { return yearOf(p) === y; }), "all", true);
           });
           onReveal();
           return;
