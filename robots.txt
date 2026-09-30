@@ -1,0 +1,12 @@
+# Intelligent Reality Lab — https://irlab.hanyang.ac.kr
+# Everything here is public and meant to be found.
+
+User-agent: *
+Allow: /
+
+# The WebGL build of the virtual lab is tens of megabytes of binary data.
+# Crawling it wastes crawl budget and indexes nothing readable.
+Disallow: /space/
+Disallow: /xr/build/
+
+Sitemap: https://irlab.hanyang.ac.kr/sitemap.xml
