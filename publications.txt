@@ -28,49 +28,49 @@
 tag: understand
 title: Authentication-Style Enrollment for Personalized Facial Emotion Recognition Under Head-Mounted Display Occlusion
 authors: Myungjun Lee, Chuyang Zhang, Hyeongil Nam, Gouri Ginde, and Kangsoo Kim
-venue: Proceedings of the 2026 32st ACM Symposium on Virtual Reality Software and Technology, 2026
+venue: Proceedings of the 2026 32nd ACM Symposium on Virtual Reality Software and Technology, 2026 (Accepted)
 image: fig1new.jpg
 ---
 
 tag: deploy
 title: Exploring Cultural Competency in Palliative Nursing Education Using AI-Powered Virtual Agents in VR: A Design-Oriented Pilot Study
 authors: Taeyeon Kim, Arjun Singh Chatha, Caitlin Manz, Hyeongil Nam, Kara Sealock, and Kangsoo Kim
-venue: Proceedings of the 2026 32st ACM Symposium on Virtual Reality Software and Technology, 2026
+venue: Proceedings of the 2026 32nd ACM Symposium on Virtual Reality Software and Technology, 2026 (Accepted)
 image: vrst_nursing.jpg
 ---
 
 tag: understand
 title: The Impact of Customizing Pedagogical Agents on Learners’ Intrinsic Motivation and Satisfaction in Augmented Reality
 authors: Ahmad Fouad, Hyeongil Nam, and Kangsoo Kim
-venue: Proceedings of ACM Symposium on Spatial User Interaction (SUI) Poster, 2026
+venue: Proceedings of ACM Symposium on Spatial User Interaction (SUI) Poster, 2026 (Accepted)
 image: teaser_.jpg
 ---
 
 tag: interact
 title: Investigating the Impact of Personalized Gaze Behaviors on Social Interaction with Virtual Humans in VR: A Study Design
 authors: Chuyang Zhang, Hyeongil Nam, and Kangsoo Kim
-venue: Proceedings of ACM Symposium on Spatial User Interaction (SUI) Poster, 2026
+venue: Proceedings of ACM Symposium on Spatial User Interaction (SUI) Poster, 2026 (Accepted)
 image: image.jpg
 ---
 
 tag: interact
 title: Self-Resemblance and Activity-Aware Responsiveness in XR Companions: Effects on Relational Openness and Reflection
 authors: Hyeongil Nam, Jeewoo Kim, and Kangsoo Kim
-venue: IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026
+venue: IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026 (Accepted)
 image: LEGO_teaser_camera_ready.jpg
 ---
 
 tag: understand
 title: User Profiling and Modeling in Extended Reality: A Scoping Review
 authors: Chuyang Zhang, Hyeongil Nam, and Kangsoo Kim
-venue: IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026
+venue: IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026 (Accepted)
 image: Fig4.jpg
 ---
 
 tag: understand
 title: Self-Determination Theory in AR/VR Pedagogical Agents: A Scoping Review of Motivational Design
 authors: Ahmad Fouad, Hyeongil Nam, and Kangsoo Kim
-venue: 2026 IEEE International Symposium on Mixed and Augmented Reality (ISMAR), 2026
+venue: 2026 IEEE International Symposium on Mixed and Augmented Reality (ISMAR), 2026 (Accepted)
 image: download.jpg
 ---
 
