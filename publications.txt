@@ -23,36 +23,207 @@
 #
 # # 로 시작하는 줄은 설명이라 페이지에 나오지 않습니다.
 
+
+
+tag: understand
+title: Authentication-Style Enrollment for Personalized Facial Emotion Recognition Under Head-Mounted Display Occlusion
+authors: Myungjun Lee, Chuyang Zhang, Hyeongil Nam, Gouri Ginde, and Kangsoo Kim
+venue: Proceedings of the 2026 32st ACM Symposium on Virtual Reality Software and Technology, 2026
+image: fig1new.jpg
+---
+
+tag: deploy
+title: Exploring Cultural Competency in Palliative Nursing Education Using AI-Powered Virtual Agents in VR: A Design-Oriented Pilot Study
+authors: Taeyeon Kim, Arjun Singh Chatha, Caitlin Manz, Hyeongil Nam, Kara Sealock, and Kangsoo Kim
+venue: Proceedings of the 2026 32st ACM Symposium on Virtual Reality Software and Technology, 2026
+image: vrst_nursing.jpg
+---
+
+tag: understand
+title: The Impact of Customizing Pedagogical Agents on Learners’ Intrinsic Motivation and Satisfaction in Augmented Reality
+authors: Ahmad Fouad, Hyeongil Nam, and Kangsoo Kim
+venue: Proceedings of ACM Symposium on Spatial User Interaction (SUI) Poster, 2026
+image: teaser_.jpg
+---
+
 tag: interact
-title: AR Fitness Dog: The Effects of a User-Mimicking Interactive Virtual Pet on User Experience and Social Presence in Physical Exercise
-authors: Hyeongil Nam, Kisub Lee, Jong-Il Park, Kangsoo Kim
-venue: IEEE TVCG (IEEE VR 2025 special issue), 2025
-award: IEEE VR 2025 Best Paper Honorable Mention
-image: fig_ar_fitness_dog.jpg
+title: Investigating the Impact of Personalized Gaze Behaviors on Social Interaction with Virtual Humans in VR: A Study Design
+authors: Chuyang Zhang, Hyeongil Nam, and Kangsoo Kim
+venue: Proceedings of ACM Symposium on Spatial User Interaction (SUI) Poster, 2026
+image: image.jpg
+---
+
+tag: interact
+title: Self-Resemblance and Activity-Aware Responsiveness in XR Companions: Effects on Relational Openness and Reflection
+authors: Hyeongil Nam, Jeewoo Kim, and Kangsoo Kim
+venue: IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026
+image: LEGO_teaser_camera_ready.jpg
+---
+
+tag: understand
+title: User Profiling and Modeling in Extended Reality: A Scoping Review
+authors: Chuyang Zhang, Hyeongil Nam, and Kangsoo Kim
+venue: IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026
+image: Fig4.jpg
+---
+
+tag: understand
+title: Self-Determination Theory in AR/VR Pedagogical Agents: A Scoping Review of Motivational Design
+authors: Ahmad Fouad, Hyeongil Nam, and Kangsoo Kim
+venue: 2026 IEEE International Symposium on Mixed and Augmented Reality (ISMAR), 2026
+image: download.jpg
+---
+
+
+tag: understand
+title: The Dominance Effect: How Verbal and Nonverbal Cues of Virtual Agents Influence Decision-Making in VR
+authors: Taeyeon Kim, Hyeongil Nam, Sunghun Jung, Ahmad A Fouad, Kangsoo Kim, Myungho Lee
+venue: Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems, 2026
+image: chi26-1261-fig1.jpg
+
+---
+
+tag: interact
+title: Exploring Experiential Differences Between Virtual and Physical Memory-Linked Objects in Extended Reality
+authors: Zaid Ahmed, Omar A Khan, Hyeongil Nam, Kangsoo Kim
+venue: Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems, 2026
+image: chiea26-717-fig1.jpg
+
+---
+
+tag: deploy
+title: Perceived Usability, User Experience, and Technology Acceptance of Role-Specific Augmented Reality Decision Support Tools for Cardiac Arrest Resuscitation: Prospective Observational Pilot Study
+authors: Ryan Kang, Adam Cheng, Yiqun Lin, Hyeongil Nam, Jennifer Davidson, Donovan Curtis Duncan, Johan N Siebert, Sergio Manzano, Alexandre De Masi, Ana Rajic, Sharleen Kayne Olanka, Frederic Ehrler, Kangsoo Kim
+venue: JMIR XR and Spatial Computing (JMXR), 2026
+image: 766d5541-32a7-11f1-8c5f-6950e2148e12.jpg
+---
+
+tag: understand
+title: Influence of Avatar Appearance and Target Distance on Locomotion Method Selection in Virtual Reality
+authors: Omar A Khan, Junyeong Kum, Hyeongil Nam, Myungho Lee, Kangsoo Kim
+venue: IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026
+image: avatar-locomotion_teaser.jpg
+---
+
+tag: understand
+title: Psychological ownership in shared AR: The roles of partner reality, object reality, controllability, and proximity
+authors: Dongyun Han, Donghoon Kim, Hyeongil Nam, Kangsoo Kim, Isaac Cho
+venue: Computers & Graphics (CAG), 2026
+image: 1-s2.0-S0097849326000543-ga1.jpg
+
+---
+
+tag: understand
+title: Agent Personality as Social Augmentation: How AI Traits Shape Human Perception and Decision-Making in XR
+authors: Taeyeon Kim, Hyeongil Nam, Kangsoo Kim
+venue: SAXR CHI’26: ACM CHI 2026 Workshop on Shaping Future Human Connection: Social Augmentation through XR Technologies, 2026
+image: Figure_1.jpg
+---
+
+tag: understand
+title: Who Is There With Me? User Identity, Avatars, and Authenticity in Social XR
+authors: Chuyang Zhang, Hyeongil Nam, Kangsoo Kim
+venue: SAXR CHI’26: ACM CHI 2026 Workshop on Shaping Future Human Connection: Social Augmentation through XR Technologies, 2026
+image: fig1.jpg
+
+---
+
+tag: deploy
+title: Learning to Lead Under Stress: Designing AI Guidance for In-Hospital Resuscitation Team Leader Training in XR
+authors: Myungjun Lee, Hyeongil Nam, Jazeb Zafar, Jennifer Davidson, Yiqun Lin, Adam Cheng, Kangsoo Kim
+venue: CHI’26: XR4CE workshop, 2026
+image: figure1.jpg
+---
+
+tag: interact
+title: Joining the circle: Human entry behavior in a mixed reality f-formation with agent, avatar, and human partners
+authors: Junyeong Kum, Sunghun Jung, Hyeongil Nam, Kangsoo Kim, Myungho Lee
+venue:  Proceedings of the 2025 31st ACM Symposium on Virtual Reality Software and Technology (VRST), 2025
+image: vrst25-57-fig1.jpg
+
+---
+
+tag: interact
+title: Developing a Palliative Care Simulation for the Hindu Cultural Context Using Interactive Virtual Agents: A Work-in-Progress
+authors: Arjun Chatha, Hyeongil Nam, Kara Sealock, Kangsoo Kim
+venue: 2025 IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct), 2025
+image: teaserpa.jpg
+---
+
+tag: understand
+title: Gender Congruence and Social Context in Xr: Effects on Partner Preference, Warmth, Competence, and Uncanniness
+authors: Hyeongil Nam, Seoyoung Kang, Anh Nguyen, Isaac Cho, Woontack Woo, Kangsoo Kim
+venue: 2025 IEEE International Symposium on Mixed and Augmented Reality (ISMAR), 2025
+image: teaserge.jpg
+---
+
+tag: interact
+title: Touching the Virtual Dog: Effects of Active and Passive Haptic Feedback on Social Presence and Emotional Bonding in Virtual Pet Interaction
+authors: Ahmad Fouad, Hyeongil Nam, Anh Nguyen, Dongyun Han, Donghoon Kim, Isaac Cho, Kangsoo Kim
+venue: 2025 IEEE International Symposium on Mixed and Augmented Reality (ISMAR), 2025
+image: teaserhapticdog.jpg
+---
+
+tag: deploy
+title: An Immersive Digital Twin with Virtual Agent Interface for Pipeline Leak Simulation and Monitoring
+authors: Mehdi Marzban, Muskan Sarvesh, Charbel Maroun, Brody Wells, Nanjia Wang, Hyeongil Nam, Frank Maurer, Kangsoo Kim
+venue: 2025 IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct), 2025
+image: teaserleak.jpg
+---
+
+tag: interact
+title: When senses collide: Investigating modality congruence and interference between task and notification in augmented reality
+authors: Mehakdeep Kaur, Hyeongil Nam, Ryan Kang, Dongyun Han, DongHoon Kim, Isaac Cho, Kangsoo Kim
+venue: 2025 IEEE International Symposium on Mixed and Augmented Reality (ISMAR), 2025
+image: teasercollide.jpg
+---
+
+tag: understand
+title: Experiencing immersive virtual nature for well-being, restoration, performance, and nature connectedness: A scoping review
+authors: Jeewoo Kim, Svara Patel, Hyeongil Nam, Janghee Cho, Kangsoo Kim
+venue: IEEE Transactions on Visualization and Computer Graphics (TVCG), 2025
+image: naturethematic.jpg
+---
+
+
+tag: interact
+title: Effects of AI-Powered Embodied Avatars on Communication Quality and Social Connection in Asynchronous Virtual Meetings
+authors: Hyeongil Nam, Muskan Sarvesh, Seoyoung Kang, Woontack Woo, Kangsoo Kim
+venue:  IEEE Transactions on Visualization and Computer Graphics (TVCG), 2025
+image: fig_async_avatar.jpg
+
 
 ---
 
 tag: interact
 title: Impact of Avatar-Locomotion Congruence on User Experience and Identification in Virtual Reality
 authors: Omar Khan, Hyeongil Nam, Kangsoo Kim
-venue: IEEE TVCG (IEEE ISMAR 2025 special issue), 2025
+venue: IEEE Transactions on Visualization and Computer Graphics (TVCG), 2025
 award: IEEE ISMAR 2025 Best Paper Honorable Mention
 image: fig_avatar_locomotion.jpg
 
 ---
 
 tag: interact
-title: Effects of AI-Powered Embodied Avatars on Communication Quality and Social Connection in Asynchronous Virtual Meetings
-authors: Hyeongil Nam, Muskan Sarvesh, Seoyoung Kang, Woontack Woo, Kangsoo Kim
-venue: IEEE TVCG (IEEE ISMAR 2025 special issue), 2025
-image: fig_async_avatar.jpg
+title: AR Fitness Dog: The Effects of a User-Mimicking Interactive Virtual Pet on User Experience and Social Presence in Physical Exercise
+authors: Hyeongil Nam, Kisub Lee, Jong-Il Park, Kangsoo Kim
+venue:  IEEE Transactions on Visualization and Computer Graphics (TVCG), 2025
+award: IEEE VR 2025 Best Paper Honorable Mention
+image: fig_ar_fitness_dog.jpg
 
+---
+
+tag: deploy
+title: SHAPE: Safe Hydrogen Agile Pipeline Engineering with XR and AI-Enhanced Digital Twins
+authors: Nanjia Wang, Muskan Sarvesh, Hyeongil Nam, et al.
+venue: 2025 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW), 2025
+image: teaser3.jpg
 ---
 
 tag: interact
 title: Watch Buddy: Evaluating the Impact of an Expressive Virtual Agent on Video Consumption Experience in Augmented Reality
 authors: Hyeongil Nam, Kisub Lee, Muskan Sarvesh, Sangwoo Cho, Jong-Il Park, Kangsoo Kim
-venue: IEEE ISMAR, 2024
+venue: 2024 IEEE International Symposium on Mixed and Augmented Reality (ISMAR), 2024
 image: fig_watch_buddy.jpg
 
 ---
@@ -60,23 +231,14 @@ image: fig_watch_buddy.jpg
 tag: understand
 title: An Emotionally Responsive Virtual Parent for Pediatric Nursing Education: A Framework for Multimodal Momentary and Accumulated Interventions
 authors: Hyeongil Nam, Chanhee Kim, Kangsoo Kim, Ji-Young Yeo, Jong-Il Park
-venue: IEEE ISMAR, 2022
-image: fig_virtual_parent.jpg
-
----
-
-tag: deploy
-title: SHAPE: Safe Hydrogen Agile Pipeline Engineering with XR and AI-Enhanced Digital Twins
-authors: Nanjia Wang, Muskan Sarvesh, Hyeongil Nam, et al.
-venue: IEEE VRW, 2025, pp. 1115-1122
-image: fig_oilgas_twin.jpg
-
+venue: 2022 IEEE International Symposium on Mixed and Augmented Reality (ISMAR), 2022
+image: new_figure1_1.jpg
 ---
 
 tag: deploy
 title: Multidisciplinary Design-Based Multimodal Virtual Reality Simulation in Nursing Education: Mixed Methods Study
 authors: Ji-Young Yeo, Hyeongil Nam, Jong-Il Park, Soo-Yeon Han
-venue: JMIR Medical Education, vol. 10, e53106, 2024
+venue: JMIR Medical Education, 2024
 image: fig_nursing_edu.jpg
 
 ---
@@ -84,4 +246,5 @@ image: fig_nursing_edu.jpg
 tag: foundation
 title: Physically Plausible Realistic Grip-Lift Interaction Based on Hand Kinematics in VR
 authors: Hyeongil Nam, Chanhee Kim, Kangsoo Kim, Jong-Il Park
-venue: MDPI Electronics, vol. 12, no. 13, p. 2794, 2023
+venue: MDPI Electronics, 2023
+image: fig1_230612.jpg
