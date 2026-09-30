@@ -199,6 +199,16 @@
 .lab-hero .scroll-cue svg { animation: cue 2.4s ease-in-out infinite }
 @keyframes cue { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(4px) } }
 
+/* The cue is centred and the stage controls are right-aligned, so on a narrow-ish screen -
+   a tablet, a small laptop - the controls reach across the middle and the two sit on top of
+   each other. The clearance between them is half the viewport less the controls (427 px), the
+   cue's half-width and the right offset, which only clears 60 px at about 1100. Below that the
+   hero no longer fills the viewport anyway, so the next section is already showing and the cue
+   has nothing left to announce. */
+@media (max-width: 1100px) {
+  .lab-hero .scroll-cue { display: none }
+}
+
 /* The headline lives in the hero now, so the block below it starts with the copy. */
 .lab-hero + .hero-lab { padding-top: 40px }
 
