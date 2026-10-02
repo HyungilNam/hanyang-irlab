@@ -47,11 +47,19 @@
   border-bottom: 1px solid var(--line);
 }
 
-/* A screen at dpr 1 needs well under half the pixels the same screen needs at dpr 2, and the
-   1536 file is indistinguishable there while costing 157 KB instead of 336. The widest monitors
-   are excluded because their canvas alone passes 1536. Anything not matched here - every phone
-   and tablet, and any retina display - keeps the full-size file. */
-@media (max-resolution: 1.5dppx) and (max-width: 1600px) {
+/* The 1536 file is only safe where the canvas times the pixel ratio stays under 1536, and the
+   canvas is not the viewport: the hero is tall, so it is at least heroHeight x ratio, which is
+   1361 css px wherever the hero reaches its 760 px cap. That leaves very little headroom.
+
+     1366 css px @ dpr 1      needs 1351   enough
+     1500 css px @ dpr 1      needs 1485   enough
+     1600 css px @ dpr 1      needs 1585   too small
+     1366 css px @ dpr 1.25   needs 1689   too small
+      768 css px @ dpr 1.25   needs 1701   too small - a portrait tablet needs more than a laptop
+
+   So: dpr 1 only, and under 1500. Everything else - every phone, every tablet above dpr 1, and
+   any display finer than 1x - takes the full-size file. */
+@media (max-resolution: 1dppx) and (max-width: 1500px) {
   .lab-hero { --hero-img: url("assets/hero/irlab-hero-sm.jpg"); }
 }
 
