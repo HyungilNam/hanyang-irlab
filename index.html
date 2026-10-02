@@ -23,13 +23,13 @@
    header wraps to two rows on narrow screens. */
 .lab-hero {
   --hero-img: url("assets/hero/irlab-hero.jpg");
-  /* 1376 / 768. The hero is full-bleed, so the browser draws it at the viewport width - about
-     1905 px on a 1920 desktop, and about 2539 on a phone, where the image has to cover a tall
-     box. This render is smaller than either, so build-hero.ps1 sharpens it mildly to survive
-     being magnified. A 5x upscale was tried and reverted: it was sharper everywhere except the
-     agent's face, which it redrew without his glasses.
-     Rebuild with tools/build-hero.ps1 and set this ratio to whatever it reports. */
-  --img-ratio: 1.7917;
+  /* 2560 / 1430, built by tools/build-hero.ps1 from the repaired 5120 render.
+     The hero is full-bleed and tall, so the image covers a canvas of max(viewport,
+     heroHeight x ratio) css px, times the device pixel ratio. That is 1905 on a 1920 desktop
+     but 2548 on a 390 px phone at 2x - most of a phone's canvas is cropped off-screen. So the
+     useful split is by pixel density, not screen size: see the smaller file below.
+     Set this to whatever build-hero.ps1 reports. */
+  --img-ratio: 1.7902;
   --seam: 49.5%;              /* where the virtual half meets the real one */
   --hero-ink: #f4f7fb;
   --hero-dim: rgba(244, 247, 251, .78);
@@ -45,6 +45,14 @@
   background: var(--hero-bg);
   isolation: isolate;
   border-bottom: 1px solid var(--line);
+}
+
+/* A screen at dpr 1 needs well under half the pixels the same screen needs at dpr 2, and the
+   1536 file is indistinguishable there while costing 157 KB instead of 336. The widest monitors
+   are excluded because their canvas alone passes 1536. Anything not matched here - every phone
+   and tablet, and any retina display - keeps the full-size file. */
+@media (max-resolution: 1.5dppx) and (max-width: 1600px) {
+  .lab-hero { --hero-img: url("assets/hero/irlab-hero-sm.jpg"); }
 }
 
 @property --wl { syntax: "<percentage>"; inherits: true; initial-value: 0%; }
