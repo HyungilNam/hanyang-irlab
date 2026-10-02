@@ -63,6 +63,18 @@
   .lab-hero { --hero-img: url("assets/hero/irlab-hero-sm.jpg"); }
 }
 
+/* And the other end: a 2560 monitor at dpr 1.25 wants 3181 device px, and a retina laptop at
+   1440 css px wants 2880 - both past the 2560 default, so both were being magnified. The 3328
+   file covers them for 445 KB.
+
+   The min-width guard keeps it off phones deliberately. A phone at dpr 3 wants 3822 and will
+   be magnified by the default file, but sending it half a megabyte over cellular to fix a
+   sliver of a cropped image is the worse trade. */
+@media (min-width: 2048px),
+       (min-resolution: 1.5dppx) and (min-width: 1200px) {
+  .lab-hero { --hero-img: url("assets/hero/irlab-hero-lg.jpg"); }
+}
+
 @property --wl { syntax: "<percentage>"; inherits: true; initial-value: 0%; }
 @property --wr { syntax: "<percentage>"; inherits: true; initial-value: 0%; }
 
