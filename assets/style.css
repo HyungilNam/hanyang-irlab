@@ -73,7 +73,9 @@ header.top .mainnav a.enter:hover .ko-inline { color: rgba(255,255,255,.8); }
 .brand-names { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.25; }
 .brand .ko-name { font-size: 15px; font-weight: 700; letter-spacing: -0.01em; }
 .brand .en-name { font-size: 12px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
-.univ { height: 30px; width: auto; display: block; }
+/* The university mark sat at 30 px against the lab's own 40 px monogram, which read as the
+   junior of the two. The file is 492 x 110, so there is plenty of resolution to grow into. */
+.univ { height: 42px; width: auto; display: block; }
 
 /* IRL mark — the initials, read at a glance. "IRL" is also the internet's shorthand for
    "in real life", which is the lab's subject, so the mark needs no explaining. The brass node is
@@ -502,7 +504,7 @@ footer .credits { display: block; margin-top: 8px; }
   header.top .mainnav { gap: 12px; row-gap: 8px; font-size: 13.5px; padding: 0 20px 12px; }
   header.top .mainnav a.enter { margin-left: 0; padding: 4px 12px; }
   header.top .topbar { padding: 12px 20px 8px; }
-  .univ { height: 24px; }
+  .univ { height: 32px; }
   .irl-mark { width: 30px; height: 30px; }
   .brand .ko-name { font-size: 14px; }
   .brand .en-name { font-size: 10.5px; }
