@@ -23,12 +23,13 @@
    header wraps to two rows on narrow screens. */
 .lab-hero {
   --hero-img: url("assets/hero/irlab-hero.jpg");
-  /* 2560 / 1430. The hero is full-bleed, so the browser draws it at the viewport width -
-     about 1905 px on a 1920 desktop, 2381 at a 1.25 pixel ratio. Shipping it wider than that
-     means the browser only ever shrinks it, which keeps the edges crisp; nothing is sharpened
-     here, because an unsharp mask belongs on an image about to be magnified.
+  /* 1376 / 768. The hero is full-bleed, so the browser draws it at the viewport width - about
+     1905 px on a 1920 desktop, and about 2539 on a phone, where the image has to cover a tall
+     box. This render is smaller than either, so build-hero.ps1 sharpens it mildly to survive
+     being magnified. A 5x upscale was tried and reverted: it was sharper everywhere except the
+     agent's face, which it redrew without his glasses.
      Rebuild with tools/build-hero.ps1 and set this ratio to whatever it reports. */
-  --img-ratio: 1.7902;
+  --img-ratio: 1.7917;
   --seam: 49.5%;              /* where the virtual half meets the real one */
   --hero-ink: #f4f7fb;
   --hero-dim: rgba(244, 247, 251, .78);
