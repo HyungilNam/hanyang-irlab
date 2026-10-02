@@ -23,7 +23,14 @@
    header wraps to two rows on narrow screens. */
 .lab-hero {
   --hero-img: url("assets/hero/irlab-hero.jpg");
-  --img-ratio: 1.7917;        /* 1376 / 768 - change with the image */
+  /* 1376 / 768 - change with the image.
+     On sharpness: the hero is full-bleed, so the browser scales this to the viewport width.
+     A 1920 desktop shows it at about 1.73x its own pixels and a 2x display at about 2.8x, so
+     a crisp result needs a source about 2400 px wide, or 3840 for Retina. The current render
+     is 1376 px and tools/hero-sharpen.ps1 pre-sharpens it to survive the upscale - that is
+     compensation, not detail. Replace it with a larger render when one exists, then re-run
+     that script and update the ratio here. */
+  --img-ratio: 1.7917;
   --seam: 49.5%;              /* where the virtual half meets the real one */
   --hero-ink: #f4f7fb;
   --hero-dim: rgba(244, 247, 251, .78);
