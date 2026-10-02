@@ -156,7 +156,11 @@
 
 .lab-hero .final {
   position: absolute; left: clamp(20px, 5vw, 72px); right: clamp(20px, 5vw, 72px);
-  bottom: clamp(74px, 12vh, 128px); max-width: 820px;
+  bottom: clamp(74px, 12vh, 128px);
+  /* The headline is 1704 px on one line at its largest, and wraps to three lines below about
+     880. 960 keeps it to two with room to spare, and is still narrower than the space available
+     on a wide screen, so the text block stays a column rather than running the full width. */
+  max-width: 960px;
   opacity: 0; transform: translateY(18px);
   transition: opacity 1s ease, transform 1.2s cubic-bezier(.2, .7, .2, 1); pointer-events: none;
 }
